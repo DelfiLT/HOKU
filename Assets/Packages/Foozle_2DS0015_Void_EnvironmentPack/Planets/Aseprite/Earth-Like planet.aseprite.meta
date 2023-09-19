@@ -1,0 +1,2290 @@
+fileFormatVersion: 2
+guid: 3f4c327d7e443f144965e577d7a29f0d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Earth-Like planet_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 256
+      height: 131
+    spriteID: 5ca5c42d10d70454fb9d4b1e3e685c3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Earth-Like planet_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 4
+      width: 256
+      height: 131
+    spriteID: a4d2ed4b855fcd14da9b4066fc759deb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 4}
+  - name: Earth-Like planet_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 4
+      width: 256
+      height: 131
+    spriteID: 65b56a83343aed74998f945336fb8a0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 4}
+  - name: Earth-Like planet_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 4
+      width: 256
+      height: 131
+    spriteID: 6b58943c2020a5145a4c549e6b089e0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 4}
+  - name: Earth-Like planet_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 4
+      width: 256
+      height: 131
+    spriteID: 0b6ffd4912ec33f4cb3a9df50e984882
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 4}
+  - name: Earth-Like planet_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 4
+      width: 256
+      height: 131
+    spriteID: 7dd17188f8f06b14fb119110317f9cde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 4}
+  - name: Earth-Like planet_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 4
+      width: 256
+      height: 131
+    spriteID: 8506607ac33e854409287e260060e48c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 4}
+  - name: Earth-Like planet_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 143
+      width: 256
+      height: 131
+    spriteID: dbb62f685d3cd4846bc7d57c7fc177d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 143}
+  - name: Earth-Like planet_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 143
+      width: 256
+      height: 131
+    spriteID: ae17c79f07cb1d141bdfd6e8033e23c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 143}
+  - name: Earth-Like planet_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 143
+      width: 256
+      height: 131
+    spriteID: 66ce5ce47bfaa36439889239bc660547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 143}
+  - name: Earth-Like planet_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 143
+      width: 256
+      height: 131
+    spriteID: b68a98fd5a6ecd841b351fdb26314de4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 143}
+  - name: Earth-Like planet_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 143
+      width: 256
+      height: 131
+    spriteID: fb92a274832de3b46834fa7fa25e3151
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 143}
+  - name: Earth-Like planet_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 143
+      width: 256
+      height: 131
+    spriteID: 13f2ab5df0841df4eaa5934e8c5c637a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 143}
+  - name: Earth-Like planet_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 143
+      width: 256
+      height: 131
+    spriteID: 74bd5fd0e7924484a975cd73dfefd263
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 143}
+  - name: Earth-Like planet_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 282
+      width: 256
+      height: 131
+    spriteID: 9076b5597067d4b42b6238313534b096
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 282}
+  - name: Earth-Like planet_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 282
+      width: 256
+      height: 131
+    spriteID: ab94ab107ffde5844872f52828bb153a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 282}
+  - name: Earth-Like planet_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 282
+      width: 256
+      height: 131
+    spriteID: f1885f4f08367ee489baff79640c4a73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 282}
+  - name: Earth-Like planet_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 282
+      width: 256
+      height: 131
+    spriteID: dbb815cde29334b468ee20bd0217ce52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 282}
+  - name: Earth-Like planet_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 282
+      width: 256
+      height: 131
+    spriteID: e73c3f02a7efedd43813f860fa206174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 282}
+  - name: Earth-Like planet_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 282
+      width: 256
+      height: 131
+    spriteID: 9bdcf25d3be92964896ecc48d6f2980c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 282}
+  - name: Earth-Like planet_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 282
+      width: 256
+      height: 131
+    spriteID: 985e90c083da8bb4a834378c8737c3c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 282}
+  - name: Earth-Like planet_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 421
+      width: 256
+      height: 131
+    spriteID: c2dcbf97e073f49478c19a0bc767616c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 421}
+  - name: Earth-Like planet_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 421
+      width: 256
+      height: 131
+    spriteID: 7c3d5aad8739a6742bdbf591bd84f719
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 421}
+  - name: Earth-Like planet_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 421
+      width: 256
+      height: 131
+    spriteID: 7b086684be85f264087b19a4945f04cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 421}
+  - name: Earth-Like planet_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 421
+      width: 256
+      height: 131
+    spriteID: 177b78421ce6fa54788744bd9be47d6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 421}
+  - name: Earth-Like planet_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 421
+      width: 256
+      height: 131
+    spriteID: 5192b992c42c47944a0fca6141e87a7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 421}
+  - name: Earth-Like planet_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 421
+      width: 256
+      height: 131
+    spriteID: cdaa16f34ac80fb44ad6d24ea4e6eaf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 421}
+  - name: Earth-Like planet_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 421
+      width: 256
+      height: 131
+    spriteID: 6fd5fc68682437c4ab22ec5915c3b22d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 421}
+  - name: Earth-Like planet_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 560
+      width: 256
+      height: 131
+    spriteID: 20f2a6966ae3d93489c20fd9ea98277e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 560}
+  - name: Earth-Like planet_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 560
+      width: 256
+      height: 131
+    spriteID: d973c5db0a73d9e4eb78e090c447b85b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 560}
+  - name: Earth-Like planet_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 560
+      width: 256
+      height: 131
+    spriteID: 9d51a9521a1105347a83a6396aac2a37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 560}
+  - name: Earth-Like planet_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 560
+      width: 256
+      height: 131
+    spriteID: 6339ebe7d5cbe5c4095161d5104b9278
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 560}
+  - name: Earth-Like planet_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 560
+      width: 256
+      height: 131
+    spriteID: ac4547013ad2d56449d6bf3ff0406218
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 560}
+  - name: Earth-Like planet_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 560
+      width: 256
+      height: 131
+    spriteID: 1f7a81e3253d8784ca4f0dc37cea10ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 560}
+  - name: Earth-Like planet_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 560
+      width: 256
+      height: 131
+    spriteID: bede50ce2938f6945b5634c73385df48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 560}
+  - name: Earth-Like planet_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 699
+      width: 256
+      height: 131
+    spriteID: cc877a3f1afa98b4197035263c81d421
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 699}
+  - name: Earth-Like planet_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 699
+      width: 256
+      height: 131
+    spriteID: 4e9a7e090506fb94ea7f9f419947e1c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 699}
+  - name: Earth-Like planet_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 699
+      width: 256
+      height: 131
+    spriteID: 28eec6819e0a1df48a9dc54680800783
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 699}
+  - name: Earth-Like planet_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 699
+      width: 256
+      height: 131
+    spriteID: 63625b6b25f50f24188b3e98be6fdcc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 699}
+  - name: Earth-Like planet_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 699
+      width: 256
+      height: 131
+    spriteID: b814b330508f2314b82420976409f39e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 699}
+  - name: Earth-Like planet_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 699
+      width: 256
+      height: 131
+    spriteID: 1b76a489c6d821847986fefb0588ef1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 699}
+  - name: Earth-Like planet_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 699
+      width: 256
+      height: 131
+    spriteID: 198de5b12e77173439b16d5e40793c40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 699}
+  - name: Earth-Like planet_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 838
+      width: 256
+      height: 131
+    spriteID: 0563f4c02d32d1c4bb8334d196c51f97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 838}
+  - name: Earth-Like planet_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 838
+      width: 256
+      height: 131
+    spriteID: 6782f8e7c81b50e4b82917185bf55f3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 838}
+  - name: Earth-Like planet_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 838
+      width: 256
+      height: 131
+    spriteID: 594820c4798728e43ac98073db570bc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 838}
+  - name: Earth-Like planet_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 838
+      width: 256
+      height: 131
+    spriteID: b753a6063d78ffb4ab1fe3f87a23251b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 838}
+  - name: Earth-Like planet_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 838
+      width: 256
+      height: 131
+    spriteID: d10d72c393cd8d54d9f935bcbf73eb39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 838}
+  - name: Earth-Like planet_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 838
+      width: 256
+      height: 131
+    spriteID: db1d0712491105748baaaae7f7fad2f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 838}
+  - name: Earth-Like planet_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 838
+      width: 256
+      height: 131
+    spriteID: 1e3929e471f4be946bec174077e2f1f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 838}
+  - name: Earth-Like planet_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 977
+      width: 256
+      height: 131
+    spriteID: abb119c7ce1679845bfd75275cf725a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 977}
+  - name: Earth-Like planet_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 977
+      width: 256
+      height: 131
+    spriteID: e15ade3d4d4f74c40b96cef59fd8383d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 977}
+  - name: Earth-Like planet_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 977
+      width: 256
+      height: 131
+    spriteID: 23ab4021a435851418aab4e902f360c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 977}
+  - name: Earth-Like planet_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 977
+      width: 256
+      height: 131
+    spriteID: 8ba4bf316630e6c46bc46c93c53b27c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 977}
+  - name: Earth-Like planet_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 977
+      width: 256
+      height: 131
+    spriteID: 8a8d283d1d9a62b42a8b337178895577
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 977}
+  - name: Earth-Like planet_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 977
+      width: 256
+      height: 131
+    spriteID: 0bddbc6bada65644b9f2e5921b036310
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 977}
+  - name: Earth-Like planet_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 977
+      width: 256
+      height: 131
+    spriteID: 60f6d41c5b93ba44491da0fcd94ea7ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 977}
+  - name: Earth-Like planet_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1116
+      width: 256
+      height: 131
+    spriteID: 8f8aea40d36f15d469fe89f136715b8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1116}
+  - name: Earth-Like planet_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1116
+      width: 256
+      height: 131
+    spriteID: 9d3221563efbcb542bdb7c41f43a8548
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 1116}
+  - name: Earth-Like planet_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 1116
+      width: 256
+      height: 131
+    spriteID: 6a40536b78e7da447b705935749af6ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 1116}
+  - name: Earth-Like planet_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 1116
+      width: 256
+      height: 131
+    spriteID: cdce1270106c4574186830c3c783d4f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 1116}
+  - name: Earth-Like planet_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 1116
+      width: 256
+      height: 131
+    spriteID: dd5f4adf0fad4a54e96ebd03925fab8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 1116}
+  - name: Earth-Like planet_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 1116
+      width: 256
+      height: 131
+    spriteID: 706e65c28fb9d3941b38d95afa293a27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 1116}
+  - name: Earth-Like planet_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 1116
+      width: 256
+      height: 131
+    spriteID: 4102366cae1e1d64cbe8ad4b4df09558
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 1116}
+  - name: Earth-Like planet_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1255
+      width: 256
+      height: 131
+    spriteID: f2541b7abea67c04cbd7d29c798b8336
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1255}
+  - name: Earth-Like planet_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1255
+      width: 256
+      height: 131
+    spriteID: 6f0ee72417a17cc44b4316a6576410a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 1255}
+  - name: Earth-Like planet_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 1255
+      width: 256
+      height: 131
+    spriteID: 48623e76e13ea664b9e8d259c669ad53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 1255}
+  - name: Earth-Like planet_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 1255
+      width: 256
+      height: 131
+    spriteID: 0b9129ac84d84bd4cb68ac429f052db2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 1255}
+  - name: Earth-Like planet_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 1255
+      width: 256
+      height: 131
+    spriteID: c581938c1317826438c2d505d82112cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 1255}
+  - name: Earth-Like planet_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 1255
+      width: 256
+      height: 131
+    spriteID: 79f37ab6a6b5ab443b098bf39a0f3f23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 1255}
+  - name: Earth-Like planet_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 1255
+      width: 256
+      height: 131
+    spriteID: fbcaf7f5a468b9e499b1de0af31977a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 1255}
+  - name: Earth-Like planet_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1394
+      width: 256
+      height: 131
+    spriteID: 0b244f5616252e845a6fca1c5c2c54bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1394}
+  - name: Earth-Like planet_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1394
+      width: 256
+      height: 131
+    spriteID: 4c44ec9a52aeb3847b9dfb10b26c1685
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 1394}
+  - name: Earth-Like planet_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 532
+      y: 1394
+      width: 256
+      height: 131
+    spriteID: bb00b4c37b44ced408dc2deadc13663b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 532, y: 1394}
+  - name: Earth-Like planet_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 1394
+      width: 256
+      height: 131
+    spriteID: 40b1359b910a11347a6277a8efe20b13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 1394}
+  - name: Earth-Like planet_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1060
+      y: 1394
+      width: 256
+      height: 131
+    spriteID: 03693afb3db576146818031f1f7493fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1060, y: 1394}
+  - name: Earth-Like planet_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1324
+      y: 1394
+      width: 256
+      height: 131
+    spriteID: d651bb0182212ff41b423a12f50989b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1324, y: 1394}
+  - name: Earth-Like planet_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.022900764}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1588
+      y: 1394
+      width: 256
+      height: 131
+    spriteID: aab9dedb2efb6dc41bc082eb37ab04ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1588, y: 1394}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -395670796
+    name: Earth-Like planet
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Earth-Like planet_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 5ca5c42d10d70454fb9d4b1e3e685c3c
+    - name: Earth-Like planet_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: a4d2ed4b855fcd14da9b4066fc759deb
+    - name: Earth-Like planet_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 65b56a83343aed74998f945336fb8a0c
+    - name: Earth-Like planet_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 6b58943c2020a5145a4c549e6b089e0e
+    - name: Earth-Like planet_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 0b6ffd4912ec33f4cb3a9df50e984882
+    - name: Earth-Like planet_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 7dd17188f8f06b14fb119110317f9cde
+    - name: Earth-Like planet_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 8506607ac33e854409287e260060e48c
+    - name: Earth-Like planet_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: dbb62f685d3cd4846bc7d57c7fc177d5
+    - name: Earth-Like planet_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: ae17c79f07cb1d141bdfd6e8033e23c8
+    - name: Earth-Like planet_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 66ce5ce47bfaa36439889239bc660547
+    - name: Earth-Like planet_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: b68a98fd5a6ecd841b351fdb26314de4
+    - name: Earth-Like planet_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: fb92a274832de3b46834fa7fa25e3151
+    - name: Earth-Like planet_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 13f2ab5df0841df4eaa5934e8c5c637a
+    - name: Earth-Like planet_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 74bd5fd0e7924484a975cd73dfefd263
+    - name: Earth-Like planet_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 9076b5597067d4b42b6238313534b096
+    - name: Earth-Like planet_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: ab94ab107ffde5844872f52828bb153a
+    - name: Earth-Like planet_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: f1885f4f08367ee489baff79640c4a73
+    - name: Earth-Like planet_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: dbb815cde29334b468ee20bd0217ce52
+    - name: Earth-Like planet_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: e73c3f02a7efedd43813f860fa206174
+    - name: Earth-Like planet_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 9bdcf25d3be92964896ecc48d6f2980c
+    - name: Earth-Like planet_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 985e90c083da8bb4a834378c8737c3c7
+    - name: Earth-Like planet_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: c2dcbf97e073f49478c19a0bc767616c
+    - name: Earth-Like planet_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 7c3d5aad8739a6742bdbf591bd84f719
+    - name: Earth-Like planet_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 7b086684be85f264087b19a4945f04cf
+    - name: Earth-Like planet_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 177b78421ce6fa54788744bd9be47d6c
+    - name: Earth-Like planet_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 5192b992c42c47944a0fca6141e87a7c
+    - name: Earth-Like planet_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: cdaa16f34ac80fb44ad6d24ea4e6eaf3
+    - name: Earth-Like planet_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 6fd5fc68682437c4ab22ec5915c3b22d
+    - name: Earth-Like planet_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 20f2a6966ae3d93489c20fd9ea98277e
+    - name: Earth-Like planet_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: d973c5db0a73d9e4eb78e090c447b85b
+    - name: Earth-Like planet_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 9d51a9521a1105347a83a6396aac2a37
+    - name: Earth-Like planet_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 6339ebe7d5cbe5c4095161d5104b9278
+    - name: Earth-Like planet_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: ac4547013ad2d56449d6bf3ff0406218
+    - name: Earth-Like planet_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 1f7a81e3253d8784ca4f0dc37cea10ea
+    - name: Earth-Like planet_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: bede50ce2938f6945b5634c73385df48
+    - name: Earth-Like planet_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: cc877a3f1afa98b4197035263c81d421
+    - name: Earth-Like planet_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 4e9a7e090506fb94ea7f9f419947e1c0
+    - name: Earth-Like planet_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 28eec6819e0a1df48a9dc54680800783
+    - name: Earth-Like planet_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 63625b6b25f50f24188b3e98be6fdcc8
+    - name: Earth-Like planet_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: b814b330508f2314b82420976409f39e
+    - name: Earth-Like planet_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 1b76a489c6d821847986fefb0588ef1b
+    - name: Earth-Like planet_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 198de5b12e77173439b16d5e40793c40
+    - name: Earth-Like planet_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 0563f4c02d32d1c4bb8334d196c51f97
+    - name: Earth-Like planet_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 6782f8e7c81b50e4b82917185bf55f3d
+    - name: Earth-Like planet_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 594820c4798728e43ac98073db570bc3
+    - name: Earth-Like planet_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: b753a6063d78ffb4ab1fe3f87a23251b
+    - name: Earth-Like planet_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: d10d72c393cd8d54d9f935bcbf73eb39
+    - name: Earth-Like planet_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: db1d0712491105748baaaae7f7fad2f7
+    - name: Earth-Like planet_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 1e3929e471f4be946bec174077e2f1f9
+    - name: Earth-Like planet_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: abb119c7ce1679845bfd75275cf725a0
+    - name: Earth-Like planet_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: e15ade3d4d4f74c40b96cef59fd8383d
+    - name: Earth-Like planet_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 23ab4021a435851418aab4e902f360c9
+    - name: Earth-Like planet_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 8ba4bf316630e6c46bc46c93c53b27c2
+    - name: Earth-Like planet_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 8a8d283d1d9a62b42a8b337178895577
+    - name: Earth-Like planet_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 0bddbc6bada65644b9f2e5921b036310
+    - name: Earth-Like planet_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 60f6d41c5b93ba44491da0fcd94ea7ca
+    - name: Earth-Like planet_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 8f8aea40d36f15d469fe89f136715b8f
+    - name: Earth-Like planet_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 9d3221563efbcb542bdb7c41f43a8548
+    - name: Earth-Like planet_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 6a40536b78e7da447b705935749af6ab
+    - name: Earth-Like planet_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: cdce1270106c4574186830c3c783d4f0
+    - name: Earth-Like planet_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: dd5f4adf0fad4a54e96ebd03925fab8f
+    - name: Earth-Like planet_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 706e65c28fb9d3941b38d95afa293a27
+    - name: Earth-Like planet_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 4102366cae1e1d64cbe8ad4b4df09558
+    - name: Earth-Like planet_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: f2541b7abea67c04cbd7d29c798b8336
+    - name: Earth-Like planet_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 6f0ee72417a17cc44b4316a6576410a8
+    - name: Earth-Like planet_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 48623e76e13ea664b9e8d259c669ad53
+    - name: Earth-Like planet_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 0b9129ac84d84bd4cb68ac429f052db2
+    - name: Earth-Like planet_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: c581938c1317826438c2d505d82112cb
+    - name: Earth-Like planet_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 79f37ab6a6b5ab443b098bf39a0f3f23
+    - name: Earth-Like planet_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: fbcaf7f5a468b9e499b1de0af31977a2
+    - name: Earth-Like planet_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 0b244f5616252e845a6fca1c5c2c54bb
+    - name: Earth-Like planet_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 4c44ec9a52aeb3847b9dfb10b26c1685
+    - name: Earth-Like planet_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: bb00b4c37b44ced408dc2deadc13663b
+    - name: Earth-Like planet_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 40b1359b910a11347a6277a8efe20b13
+    - name: Earth-Like planet_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: 03693afb3db576146818031f1f7493fc
+    - name: Earth-Like planet_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: d651bb0182212ff41b423a12f50989b5
+    - name: Earth-Like planet_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 0
+        y: -3
+        width: 256
+        height: 131
+      spriteId: aab9dedb2efb6dc41bc082eb37ab04ca
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 256, y: 128}
