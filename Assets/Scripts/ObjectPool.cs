@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class ObjectPool : MonoBehaviour
     public static ObjectPool SharedInstance;
 
     public List<GameObject> objectsToPool;
-    public List<List<GameObject>> listsToPool;
+    public Dictionary<string, List<GameObject>> listsToPool;
     public int amountToPool;
 
     void Awake()
@@ -17,8 +18,8 @@ public class ObjectPool : MonoBehaviour
 
     void Start() 
     {
+        listsToPool = new Dictionary<string, List<GameObject>>();
         GameObject tmp;
-        listsToPool = new List<List<GameObject>>();
 
         foreach (GameObject gameObject in objectsToPool)     
         {
@@ -30,19 +31,23 @@ public class ObjectPool : MonoBehaviour
                 pooledObjects.Add(tmp);
             }
 
-            listsToPool.Add(pooledObjects);
+            listsToPool.Add(gameObject.tag, pooledObjects);
         }
     }
 
-    //public GameObject GetPooledObject() 
-    //{ 
-    //    for (int i = 0; i < amountToPool; i++)
-    //    { 
-    //        if (!pooledObjects[i].activeInHierarchy)
-    //        { 
-    //            return pooledObjects[i]; 
-    //        } 
-    //    } 
-    //    return null;
-    //}
+    public GameObject GetPooledObject(string bulletType)
+    {
+        for (int i = 0; i < amountToPool; i++)
+        {
+            if (!listsToPool[bulletType][i].activeInHierarchy)
+            {
+                if(listsToPool[bulletType] != null)
+                {
+                    return listsToPool[bulletType][i];
+                }
+                return null;
+            }
+        }
+        return null;
+    }
 }
