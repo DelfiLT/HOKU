@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7667000188693557185}
   - component: {fileID: 7667000188693557184}
   - component: {fileID: 7667000188693557191}
+  - component: {fileID: -8295828543020980357}
   m_Layer: 0
   m_Name: ShipPlayer
   m_TagString: Untagged
@@ -179,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23024d98f77f97f45a1c7b1035f1a293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!114 &7667000188693557191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,3 +193,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee06d82d49265f241b5abadaf65cad87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8295828543020980357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667000188693557197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 751e37f88522f4b4a9a5de88cfe81acf, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 074e4790-3f33-49a6-9a1d-0fee4de5e5d1
+    m_ActionName: Player/Walk
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}

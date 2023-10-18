@@ -39,6 +39,7 @@ public class ObjectPool : MonoBehaviour
     {
         for (int i = 0; i < amountToPool; i++)
         {
+            Debug.Log(listsToPool.ContainsKey(bulletType));
             if (!listsToPool[bulletType][i].activeInHierarchy)
             {
                 if(listsToPool[bulletType] != null)

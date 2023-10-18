@@ -1,17 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Weapon : MonoBehaviour, Iweapon
 {
 
-    public GameObject bullet;
+    private GameObject bullet;
     private Rigidbody bulletRB;
+    [SerializeField] private float bulletSpeed;
     public Transform spawn;
+    private PlayerInputs playerInput;
 
+
+    private void Start()
+    {
+        playerInput = new PlayerInputs();
+        playerInput.Player.Enable();
+        playerInput.Player.Shoot.performed += Shoot;
+    }
     void Update()
     {
-        Shoot();
+        //Shoot();
     }
 
     public void PickWeapon(WeaponType weaponType)
@@ -44,14 +54,12 @@ public class Weapon : MonoBehaviour, Iweapon
             bullet.transform.position = spawn.position;
             bullet.transform.rotation = spawn.rotation;
             bullet.SetActive(true);
+            bulletRB.AddRelativeForce(Vector2.up * bulletSpeed);
         }
     }
 
-    public void Shoot()
+    public void Shoot(InputAction.CallbackContext context)
     {
-        if (Input.GetMouseButton(0))
-        {
-            
-        }
+        SpawnBullet();
     }
 }
