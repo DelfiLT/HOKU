@@ -10,6 +10,7 @@ public class WeaponPick : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Iweapon>() != null)
         {
+            Debug.Log("colisione holaa");
             collision.gameObject.GetComponent<Iweapon>().PickWeapon(weaponType);
             Destroy(this.gameObject);
         }

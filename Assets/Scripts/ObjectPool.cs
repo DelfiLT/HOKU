@@ -37,16 +37,16 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject GetPooledObject(string bulletType)
     {
+        if(bulletType == null)
+        {
+            return null;
+        }
+
         for (int i = 0; i < amountToPool; i++)
         {
-            Debug.Log(listsToPool.ContainsKey(bulletType));
             if (!listsToPool[bulletType][i].activeInHierarchy)
             {
-                if(listsToPool[bulletType] != null)
-                {
-                    return listsToPool[bulletType][i];
-                }
-                return null;
+                return listsToPool[bulletType][i];
             }
         }
         return null;

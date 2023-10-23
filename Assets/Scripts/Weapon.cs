@@ -5,13 +5,10 @@ using UnityEngine.InputSystem;
 
 public class Weapon : MonoBehaviour, Iweapon
 {
-
-    private GameObject bullet;
-    private Rigidbody bulletRB;
-    [SerializeField] private float bulletSpeed;
+    private string bulletName;
     public Transform spawn;
-    private PlayerInputs playerInput;
 
+    private PlayerInputs playerInput;
 
     private void Start()
     {
@@ -19,26 +16,22 @@ public class Weapon : MonoBehaviour, Iweapon
         playerInput.Player.Enable();
         playerInput.Player.Shoot.performed += Shoot;
     }
-    void Update()
-    {
-        //Shoot();
-    }
 
     public void PickWeapon(WeaponType weaponType)
     {
         switch (weaponType)
         {
             case WeaponType.AutoCannon:
-                bullet = ObjectPool.SharedInstance.GetPooledObject("ACBullet");
+                bulletName = "ACBullet";
                 break;
             case WeaponType.BigSpace:
-                bullet = ObjectPool.SharedInstance.GetPooledObject("BSBullet");
+                bulletName = "BSBullet";
                 break;
             case WeaponType.Rockets:
-                bullet = ObjectPool.SharedInstance.GetPooledObject("RBullet");
+                bulletName = "RBullet";
                 break;
             case WeaponType.Zapper:
-                bullet = ObjectPool.SharedInstance.GetPooledObject("ZBullet");
+                bulletName = "ZBullet";
                 break;
             default:
                 break;
@@ -47,14 +40,12 @@ public class Weapon : MonoBehaviour, Iweapon
 
     public void SpawnBullet()
     {
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletName);
         if (bullet != null)
         {
-            bulletRB = bullet.GetComponent<Rigidbody>();
-
             bullet.transform.position = spawn.position;
             bullet.transform.rotation = spawn.rotation;
             bullet.SetActive(true);
-            bulletRB.AddRelativeForce(Vector2.up * bulletSpeed);
         }
     }
 

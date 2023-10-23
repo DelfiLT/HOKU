@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7667000188693557185}
   - component: {fileID: 7667000188693557184}
   - component: {fileID: 7667000188693557191}
+  - component: {fileID: 2178925143036292259}
   - component: {fileID: -8295828543020980357}
   m_Layer: 0
   m_Name: ShipPlayer
@@ -193,6 +194,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee06d82d49265f241b5abadaf65cad87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2178925143036292259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667000188693557197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9041a431e3a14fe4e895e5263990e2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 9009323657432188182}
 --- !u!114 &-8295828543020980357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +236,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 074e4790-3f33-49a6-9a1d-0fee4de5e5d1
     m_ActionName: Player/Walk
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ca834da1-d4ce-4b8e-8c94-67674fd8100d
+    m_ActionName: Player/Shoot[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
