@@ -265,37 +265,11 @@ Transform:
   m_Father: {fileID: 913363216}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &582561574
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 582561575}
-  m_Layer: 0
-  m_Name: SpawnBullet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &582561575
+--- !u!4 &582561575 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3708665488179893315, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
+  m_PrefabInstance: {fileID: 7667000188976068811}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582561574}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.92, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1599863759}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &751618614
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,11 +704,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e86b9bf7f9f96b2439c1600c5e5bfe9a, type: 3}
---- !u!4 &1599863759 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7667000188693557187, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
-  m_PrefabInstance: {fileID: 7667000188976068811}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7667000188976068811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -742,14 +711,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8295828543020980357, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8295828543020980357, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
-      propertyPath: m_NotificationBehavior
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7667000188693557184, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
       propertyPath: spawn
       value: 
