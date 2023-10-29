@@ -56,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3791237522497355705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -127,13 +127,13 @@ GameObject:
   - component: {fileID: 7667000188693557196}
   - component: {fileID: 7667000188693557186}
   - component: {fileID: 7667000188693557185}
+  - component: {fileID: 2178925143036292259}
   - component: {fileID: 7667000188693557184}
   - component: {fileID: 7667000188693557191}
-  - component: {fileID: 2178925143036292259}
   - component: {fileID: -8295828543020980357}
   m_Layer: 0
   m_Name: ShipPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -254,6 +254,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &2178925143036292259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667000188693557197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9041a431e3a14fe4e895e5263990e2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 3708665488179893315}
+  weaponSprite: {fileID: 8954790219504165848}
+  weaponSprites:
+  - {fileID: -366965912, guid: 2e15b97a359b2b44fbf5149a1415cafe, type: 3}
+  - {fileID: -1638782856, guid: d1d4f31f0e182464dbeac787ce07a9f4, type: 3}
+  - {fileID: 4898415661432502282, guid: 2e7ff41706111984ebf8b98c79547162, type: 3}
+  - {fileID: 9185705012440583663, guid: 0c8467963f88d974d9e9b363738dce05, type: 3}
 --- !u!114 &7667000188693557184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,25 +298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee06d82d49265f241b5abadaf65cad87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2178925143036292259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7667000188693557197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9041a431e3a14fe4e895e5263990e2c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawn: {fileID: 3708665488179893315}
-  weaponSprite: {fileID: 8954790219504165848}
-  weaponSprites:
-  - {fileID: 8364149292458314465, guid: c9450fa1dc9831c4cb7c933acef892e9, type: 3}
-  - {fileID: 8142044856066919854, guid: fdda4094a74e2254ebff77ef07a830b3, type: 3}
-  - {fileID: 4898415661432502282, guid: 2e7ff41706111984ebf8b98c79547162, type: 3}
-  - {fileID: 9185705012440583663, guid: 0c8467963f88d974d9e9b363738dce05, type: 3}
 --- !u!114 &-8295828543020980357
 MonoBehaviour:
   m_ObjectHideFlags: 0

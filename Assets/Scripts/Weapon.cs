@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour, Iweapon
         playerInput = new PlayerInputs();
         playerInput.Player.Enable();
         playerInput.Player.Shoot.performed += Shoot;
+        weaponSprite.enabled = false;
     }
 
     public void SpawnBullet()
@@ -60,9 +61,10 @@ public class Weapon : MonoBehaviour, Iweapon
     IEnumerator LoadWeapon(string name, int weaponNum)
     {
         bulletName = name;
+        weaponSprite.enabled = true;
         weaponSprite.sprite = weaponSprites[weaponNum];
-        yield return new WaitForSeconds(60);
+        yield return new WaitForSeconds(30);
         bulletName = "";
-        weaponSprite.sprite = null;
+        weaponSprite.enabled = false;
     }
 }

@@ -8,4 +8,13 @@ public class BulletMovement : MonoBehaviour
     {
         transform.Translate(Vector2.up * 10 * Time.deltaTime);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("BorderCollider"))
+        {
+            Debug.Log("hola???");
+            this.gameObject.SetActive(false);
+        }
+    }
 }
