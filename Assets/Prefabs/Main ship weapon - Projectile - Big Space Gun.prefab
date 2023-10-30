@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3047214232423225147}
   - component: {fileID: 9036924818671866437}
   - component: {fileID: 5189294787584474432}
+  - component: {fileID: 8106745034181126080}
   m_Layer: 0
   m_Name: Main ship weapon - Projectile - Big Space Gun
   m_TagString: BSBullet
@@ -136,3 +137,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.4}
   serializedVersion: 2
   m_Radius: 0.225
+--- !u!50 &8106745034181126080
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551602471008685467}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

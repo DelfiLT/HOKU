@@ -271,8 +271,8 @@ MonoBehaviour:
   weaponSprites:
   - {fileID: -366965912, guid: 2e15b97a359b2b44fbf5149a1415cafe, type: 3}
   - {fileID: -1638782856, guid: d1d4f31f0e182464dbeac787ce07a9f4, type: 3}
-  - {fileID: 4898415661432502282, guid: 2e7ff41706111984ebf8b98c79547162, type: 3}
-  - {fileID: 9185705012440583663, guid: 0c8467963f88d974d9e9b363738dce05, type: 3}
+  - {fileID: -1621788537, guid: 313f7dbcc240a29418569431954244c9, type: 3}
+  - {fileID: -1156674052, guid: 3137052c838c5ad449e21d037a5241da, type: 3}
 --- !u!114 &7667000188693557184
 MonoBehaviour:
   m_ObjectHideFlags: 0

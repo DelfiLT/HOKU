@@ -13,7 +13,6 @@ public class BulletMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("BorderCollider"))
         {
-            Debug.Log("hola???");
             this.gameObject.SetActive(false);
         }
     }
