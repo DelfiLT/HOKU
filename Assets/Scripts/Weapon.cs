@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour, Iweapon
 
     [SerializeField] private SpriteRenderer weaponSprite;
     [SerializeField] List<Sprite> weaponSprites;
+    [SerializeField] private AudioSource shootSound;
 
     private PlayerInputs playerInput;
 
@@ -29,6 +30,7 @@ public class Weapon : MonoBehaviour, Iweapon
             bullet.transform.position = spawn.position;
             bullet.transform.rotation = spawn.rotation;
             bullet.SetActive(true);
+            shootSound.Play();
         }
     }
 
