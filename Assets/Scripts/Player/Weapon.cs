@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour, Iweapon
 
     [SerializeField] private SpriteRenderer weaponSprite;
     [SerializeField] List<Sprite> weaponSprites;
+    [SerializeField] private AudioSource shootSound;
 
     private PlayerInputs playerInput;
 
@@ -24,17 +25,22 @@ public class Weapon : MonoBehaviour, Iweapon
     public void SpawnBullet()
     {
         GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(bulletName);
+
         if (bullet != null)
         {
             bullet.transform.position = spawn.position;
             bullet.transform.rotation = spawn.rotation;
             bullet.SetActive(true);
-        }
+            shootSound.Play();
+        } 
     }
 
     public void Shoot(InputAction.CallbackContext context)
     {
-        SpawnBullet();
+        if(bulletName != "")
+        {
+            SpawnBullet();
+        }
     }
 
     public void PickWeapon(WeaponType weaponType)
