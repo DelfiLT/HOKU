@@ -423,8 +423,6 @@ MonoBehaviour:
   - {fileID: 7460673443373689816, guid: f7f17e6e52481aa458d0e78632151d95, type: 3}
   - {fileID: 6551602471008685467, guid: e78b1d4bdc7a9334c9f3343e99bd906b, type: 3}
   - {fileID: 3844495697097277505, guid: 141c4ef7a2aa18247ad729801166e435, type: 3}
-  - {fileID: 8067552074866955843, guid: 9a091979440220e449fce2410cfb6286, type: 3}
-  amountToPool: 20
 --- !u!4 &802131795
 Transform:
   m_ObjectHideFlags: 0

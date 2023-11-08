@@ -121,6 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e98de585d7b55644ea8ae6006916508e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponType: 2
+  poolAmmount: 20
+  bulletForce: 15
 --- !u!61 &8315767633342361104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,7 +141,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.6, y: -0.4666667}
-    oldSize: {x: 0.16666667, y: 0.5}
+    oldSize: {x: 0.25, y: 0.75}
     newSize: {x: 0.16666667, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

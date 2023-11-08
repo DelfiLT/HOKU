@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Weapon : MonoBehaviour, Iweapon
+public class PlayerShooting : MonoBehaviour, Iweapon
 {
     private string bulletName;
     public Transform spawn;
 
-    [SerializeField] private SpriteRenderer weaponSprite;
     [SerializeField] List<Sprite> weaponSprites;
+    [SerializeField] private SpriteRenderer weaponSprite;
     [SerializeField] private AudioSource shootSound;
 
     private PlayerInputs playerInput;
@@ -20,6 +20,18 @@ public class Weapon : MonoBehaviour, Iweapon
         playerInput.Player.Enable();
         playerInput.Player.Shoot.performed += Shoot;
         weaponSprite.enabled = false;
+    }
+
+    public void Shoot(InputAction.CallbackContext context)
+    {
+        if(bulletName != "")
+        {
+            SpawnBullet();
+        } 
+        else
+        {
+            Debug.Log("You have no weapon equiped");
+        }
     }
 
     public void SpawnBullet()
@@ -35,29 +47,18 @@ public class Weapon : MonoBehaviour, Iweapon
         } 
     }
 
-    public void Shoot(InputAction.CallbackContext context)
-    {
-        if(bulletName != "")
-        {
-            SpawnBullet();
-        }
-    }
-
     public void PickWeapon(WeaponType weaponType)
     {
         switch (weaponType)
         {
             case WeaponType.AutoCannon:
-                StartCoroutine(LoadWeapon("ACBullet", 0));
+                StartCoroutine(LoadWeapon(WeaponType.AutoCannon.ToString(), 0));
                 break;
             case WeaponType.BigSpace:
-                StartCoroutine(LoadWeapon("BSBullet", 1));
+                StartCoroutine(LoadWeapon(WeaponType.BigSpace.ToString(), 1));
                 break;
             case WeaponType.Rockets:
-                StartCoroutine(LoadWeapon("RBullet", 2));
-                break;
-            case WeaponType.Zapper:
-                StartCoroutine(LoadWeapon("ZBullet", 3));
+                StartCoroutine(LoadWeapon(WeaponType.Rockets.ToString(), 2));
                 break;
             default:
                 break;

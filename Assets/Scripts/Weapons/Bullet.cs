@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletMovement : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
+    public WeaponType weaponType;
+    public int poolAmmount;
+
+    [SerializeField] float bulletForce;
+
     void Update()
     {
-        transform.Translate(Vector2.up * 10 * Time.deltaTime);
+        transform.Translate(Vector2.up * bulletForce * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

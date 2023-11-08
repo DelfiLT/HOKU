@@ -127,10 +127,10 @@ GameObject:
   - component: {fileID: 7667000188693557196}
   - component: {fileID: 7667000188693557186}
   - component: {fileID: 7667000188693557185}
+  - component: {fileID: -8295828543020980357}
   - component: {fileID: 2178925143036292259}
   - component: {fileID: 7667000188693557184}
   - component: {fileID: 7667000188693557191}
-  - component: {fileID: -8295828543020980357}
   m_Layer: 0
   m_Name: ShipPlayer
   m_TagString: Player
@@ -255,51 +255,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &2178925143036292259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7667000188693557197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9041a431e3a14fe4e895e5263990e2c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawn: {fileID: 3708665488179893315}
-  weaponSprite: {fileID: 8954790219504165848}
-  weaponSprites:
-  - {fileID: -366965912, guid: 2e15b97a359b2b44fbf5149a1415cafe, type: 3}
-  - {fileID: -1638782856, guid: d1d4f31f0e182464dbeac787ce07a9f4, type: 3}
-  - {fileID: -1621788537, guid: 313f7dbcc240a29418569431954244c9, type: 3}
-  - {fileID: -1156674052, guid: 3137052c838c5ad449e21d037a5241da, type: 3}
-  shootSound: {fileID: 0}
---- !u!114 &7667000188693557184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7667000188693557197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23024d98f77f97f45a1c7b1035f1a293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
---- !u!114 &7667000188693557191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7667000188693557197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee06d82d49265f241b5abadaf65cad87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-8295828543020980357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +293,51 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &2178925143036292259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667000188693557197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9041a431e3a14fe4e895e5263990e2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 3708665488179893315}
+  weaponSprites:
+  - {fileID: -366965912, guid: 2e15b97a359b2b44fbf5149a1415cafe, type: 3}
+  - {fileID: -1638782856, guid: d1d4f31f0e182464dbeac787ce07a9f4, type: 3}
+  - {fileID: -1621788537, guid: 313f7dbcc240a29418569431954244c9, type: 3}
+  - {fileID: -1156674052, guid: 3137052c838c5ad449e21d037a5241da, type: 3}
+  weaponSprite: {fileID: 8954790219504165848}
+  shootSound: {fileID: 0}
+--- !u!114 &7667000188693557184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667000188693557197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23024d98f77f97f45a1c7b1035f1a293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+--- !u!114 &7667000188693557191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667000188693557197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee06d82d49265f241b5abadaf65cad87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8069344253975481568
 PrefabInstance:
   m_ObjectHideFlags: 0
