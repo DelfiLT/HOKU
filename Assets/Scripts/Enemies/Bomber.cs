@@ -4,52 +4,32 @@ using UnityEngine;
 
 public class Bomber : Enemy
 {
-    [Header("Enemy Stats")]
-    [SerializeField] private float bomberHp;
-    [SerializeField] private float bomberVel;
-    [SerializeField] private float bomberMinRange;
-    [SerializeField] private float bomberMaxRange;
-    [SerializeField] private float bomberDistance;
+    public override string enemyName => EnemyType.Bomber.ToString();
+    public override int hp => 100;
+    public override float velocity => 20;
+    public override float minRange => 0;
+    public override float maxRange => 10;
 
-    [Header("Enemy Config")]
-    [SerializeField] private Transform bomberSpawn;
-    [SerializeField] private Transform targetTransform;
-    public WeaponType type;
-
-    public override string enemyName => "Bomber";
-    public override float hp => bomberHp;
-    public override float velocity => bomberVel;
-    public override float minRange => bomberMinRange;
-    public override float maxRange => bomberMaxRange;
-    public override float distance => bomberDistance;
-    public override Transform spawn => bomberSpawn;
-    public override Transform target => targetTransform;
+    public float distance;
 
     private void Update()
     {
-        if (targetTransform != null)
-        {
-            bomberDistance = Vector2.Distance(targetTransform.position, spawn.position);
-        }
+        //if (target != null)
+        //{
+        //    distance = Vector2.Distance(target.position, spawn.position);
+        //}
     }
 
-    public override void Follow()
+    public override void Behaviour()
     {
-        if(bomberDistance > minRange && bomberDistance < maxRange)
-        {
-            transform.position = Vector2.MoveTowards(this.transform.position, targetTransform.position, bomberVel * Time.deltaTime);
-        }
+        Destroy(this);
     }
 
-    public override void Attack()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(type.ToString());
-
-        if (bullet != null)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            bullet.transform.position = spawn.position;
-            bullet.transform.rotation = spawn.rotation;
-            bullet.SetActive(true);
+            Behaviour();
         }
     }
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6044077235107467399}
   - component: {fileID: 927742452298710894}
-  - component: {fileID: 7286495119934460898}
+  - component: {fileID: 5313150008993739098}
   m_Layer: 0
   m_Name: Kla'ed - Fighter - Base
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7286495119934460898
+--- !u!114 &5313150008993739098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,11 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ada7fb4f46c2ee43ac0737e0676abb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bomberHp: 0
-  bomberVel: 0
-  bomberMinRange: 0
-  bomberMaxRange: 0
-  bomberDistance: 0
-  bomberSpawn: {fileID: 0}
-  targetTransform: {fileID: 7667000188693557187, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
-  type: 3
+  hp: 0
+  velocity: 0
+  minRange: 0
+  maxRange: 0
+  distance: 0
+  spawn: {fileID: 0}
+  target: {fileID: 0}
+  type: 0
