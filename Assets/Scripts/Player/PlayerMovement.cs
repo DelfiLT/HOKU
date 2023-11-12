@@ -23,10 +23,6 @@ public class PlayerMovement : MonoBehaviour
     private void Walk(InputAction.CallbackContext context)
     {
         movement = context.ReadValue<Vector2>();
-    }
-
-    private void FixedUpdate()
-    {
         rb2D.velocity = movement * speed;
     }
 }

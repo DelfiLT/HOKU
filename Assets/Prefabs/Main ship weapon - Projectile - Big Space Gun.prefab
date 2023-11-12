@@ -123,6 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e98de585d7b55644ea8ae6006916508e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponType: 1
+  poolAmmount: 20
+  bulletForce: 15
 --- !u!58 &5189294787584474432
 CircleCollider2D:
   m_ObjectHideFlags: 0

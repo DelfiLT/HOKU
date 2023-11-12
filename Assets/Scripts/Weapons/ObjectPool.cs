@@ -9,29 +9,34 @@ public class ObjectPool : MonoBehaviour
 
     public List<GameObject> objectsToPool;
     public Dictionary<string, List<GameObject>> listsToPool;
-    public int amountToPool;
+    private int amountToPool;
 
     void Awake()
     {
         SharedInstance = this;
+        amountToPool = 0;
     }
 
     void Start() 
     {
         listsToPool = new Dictionary<string, List<GameObject>>();
-        GameObject tmp;
+        GameObject poolObject;
 
         foreach (GameObject gameObject in objectsToPool)     
         {
+            string name = gameObject.GetComponent<Bullet>().weaponType.ToString();
+            amountToPool = gameObject.GetComponent<Bullet>().poolAmmount;
+
             List<GameObject> pooledObjects = new List<GameObject>();
             for (int i = 0; i < amountToPool; i++)
             {
-                tmp = Instantiate(gameObject);
-                tmp.SetActive(false);
-                pooledObjects.Add(tmp);
+                poolObject = Instantiate(gameObject);
+                poolObject.SetActive(false);
+                pooledObjects.Add(poolObject);
+                poolObject.transform.parent = transform;
             }
 
-            listsToPool.Add(gameObject.tag, pooledObjects);
+            listsToPool.Add(name, pooledObjects);
         }
     }
 
