@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bomber : Enemy
+public class Healer : Enemy
 {
-    public override string enemyName => EnemyType.Bomber.ToString();
+    public override string enemyName => EnemyType.Healer.ToString();
 
     private void Awake()
     {
-        target = GameObject.FindGameObjectWithTag("Player")?.transform;
+        target = GameObject.FindGameObjectWithTag("Enemy")?.transform;
     }
 
     private void Update()
@@ -23,12 +23,12 @@ public class Bomber : Enemy
 
     public override void Behaviour()
     {
-        Destroy(gameObject);
+        //helear enemigo
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Behaviour();
         }
