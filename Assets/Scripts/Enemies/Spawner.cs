@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public EnemiesFactory EnemiesFactory;
 
-    // Update is called once per frame
-    void Update()
+    public Transform ESLeft;
+    public Transform ESBottom;
+    public Transform ESRight;
+
+    public void SpawnBomber()
     {
-        
+        EnemiesFactory.CreateEnemy(EnemyType.Bomber.ToString(), ESLeft);
     }
 }
