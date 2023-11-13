@@ -23,23 +23,26 @@ public class Shooter : Enemy
 
         shootTimer += Time.deltaTime;
 
-        if (distance > minRange && distance < maxRange)
+        if (target != null)
         {
-            Follow();
-
+            distance = Vector2.Distance(target.transform.position, transform.position);
+            if (distance > minRange && distance < maxRange)
+            {
+                Follow();
+            }
         }
 
-        if(distance <= maxRange)
+        if (distance <= maxRange)
         {
             if(shootTimer > 0.5f) 
             { 
                 shootTimer = 0;
-                Behaviour();
+                Shoot();
             }
         }
     }
 
-    public override void Behaviour()
+    public void Shoot()
     {
         GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(WeaponType.Shooter.ToString());
 

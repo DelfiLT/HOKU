@@ -15,22 +15,21 @@ public class Bomber : Enemy
     {
         distance = Vector2.Distance(target.transform.position, transform.position);
 
-        if (distance > minRange && distance < maxRange)
+        if (target != null)
         {
-            Follow();
+            distance = Vector2.Distance(target.transform.position, transform.position);
+            if (distance > minRange && distance < maxRange)
+            {
+                Follow();
+            }
         }
-    }
-
-    public override void Behaviour()
-    {
-        Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Behaviour();
+            Destroy(gameObject);
         }
     }
 }

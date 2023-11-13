@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     public abstract string enemyName { get; }
+    public float HP { get { return hp; } set { hp = value; } }
 
     [Header("Enemy Stats")]
     [SerializeField] protected float hp;
@@ -14,8 +15,6 @@ public abstract class Enemy : MonoBehaviour
 
     protected Transform target;
     protected float distance;
-
-    public abstract void Behaviour();
 
     protected void Follow()
     {
