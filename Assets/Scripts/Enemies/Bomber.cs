@@ -6,21 +6,30 @@ public class Bomber : Enemy
 {
     public override string enemyName => EnemyType.Bomber.ToString();
 
-    private void Update()
+    private void Awake()
     {
-        Follow();
+        target = GameObject.FindGameObjectWithTag("Player")?.transform;
     }
 
-    public override void Behaviour()
+    private void Update()
     {
-        Destroy(gameObject);
+        distance = Vector2.Distance(target.transform.position, transform.position);
+
+        if (target != null)
+        {
+            distance = Vector2.Distance(target.transform.position, transform.position);
+            if (distance > minRange && distance < maxRange)
+            {
+                Follow();
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Behaviour();
+            Destroy(gameObject);
         }
     }
 }
