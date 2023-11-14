@@ -105,8 +105,6 @@ MonoBehaviour:
   minRange: 5
   maxRange: 10
   particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
-  rotateSpeed: 10
-  explotionSound: {fileID: 6059437920950842123, guid: ae5ef5e01472fd643bb155a36469bc78, type: 3}
   bulletSpawn: {fileID: 3047413164249338990}
 --- !u!61 &7355371277670390951
 BoxCollider2D:
@@ -146,7 +144,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0

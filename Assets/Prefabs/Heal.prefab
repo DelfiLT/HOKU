@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30709a619d106c41b6f2ce6b80a21c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 7667000188693557197, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
+  particle: {fileID: 8572511086080315407, guid: 15421bdab6f91574c8f4bada3d44ada8, type: 3}
   healBoost: 20
 --- !u!58 &9037508513683737405
 CircleCollider2D:

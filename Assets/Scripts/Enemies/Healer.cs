@@ -10,6 +10,12 @@ public class Healer : Enemy, IgetDamagedInterface
     {
         target = GameObject.FindGameObjectWithTag("Enemy")?.transform;
         Follow();
+        RotateTowarsTarget();
+
+        if (hp > 100)
+        {
+            hp = 100;
+        }
 
         if (hp <= 0)
         {

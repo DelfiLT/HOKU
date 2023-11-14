@@ -20,6 +20,12 @@ public class Shooter : Enemy, IgetDamagedInterface
     private void Update()
     {
         Follow();
+        RotateTowarsTarget();
+
+        if (hp > 100)
+        {
+            hp = 100;
+        }
 
         shootTimer += Time.deltaTime;
         if (distance <= maxRange)

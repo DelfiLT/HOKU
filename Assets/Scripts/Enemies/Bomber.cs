@@ -16,6 +16,12 @@ public class Bomber : Enemy, IgetDamagedInterface
     private void Update()
     {
         Follow();
+        RotateTowarsTarget();
+
+        if (hp > 100)
+        {
+            hp = 100;
+        }
 
         if (hp <= 0)
         {

@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b90501b064c1d3442bd0d1d28398e503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 70
+  hp: 150
   particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
   explotionSound: {fileID: 6059437920950842123, guid: ae5ef5e01472fd643bb155a36469bc78, type: 3}
 --- !u!1001 &8069344253975481568

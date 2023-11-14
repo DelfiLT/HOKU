@@ -6,9 +6,14 @@ public abstract class PowerUps : MonoBehaviour
 {
     public abstract string powerUpName { get; }
 
-    [SerializeField] protected GameObject player;
+    protected GameObject player;
 
     public abstract void Activate();
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

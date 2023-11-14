@@ -25,8 +25,6 @@ public abstract class Enemy : MonoBehaviour
         {
            hp = 100;
         }
-
-        RotateTowarsTarget();
     }
 
     protected void Follow()

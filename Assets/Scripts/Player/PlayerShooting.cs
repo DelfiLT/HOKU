@@ -9,7 +9,7 @@ public class PlayerShooting : MonoBehaviour, Iweapon
     public Transform spawn;
     public SpriteRenderer powerUpSprite;
 
-    private bool damageBoost;
+    public bool damageBoost;
     public bool DamageBoost { get { return damageBoost; } set { damageBoost = value; } }
 
     [SerializeField] List<Sprite> weaponSprites;
@@ -28,7 +28,7 @@ public class PlayerShooting : MonoBehaviour, Iweapon
 
     public void Shoot(InputAction.CallbackContext context)
     {
-        if(bulletName != "")
+        if(bulletName != "" && bulletName != null)
         {
             SpawnBullet();
         } 
@@ -46,11 +46,11 @@ public class PlayerShooting : MonoBehaviour, Iweapon
         {
             if (damageBoost)
             {
-                bullet.GetComponent<Bullet>().Damage = bullet.GetComponent<Bullet>().Damage * 2;
+                bullet.GetComponent<Bullet>().Damage = 4;
             }
             else
             {
-                bullet.GetComponent<Bullet>().Damage = bullet.GetComponent<Bullet>().Damage / 2;
+                bullet.GetComponent<Bullet>().Damage = 2;
             }
 
             bullet.transform.position = spawn.position;

@@ -42,6 +42,11 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject GetPooledObject(string bulletType)
     {
+        if(bulletType == null || bulletType == "")
+        {
+            return null;
+        }
+
         foreach (GameObject gameObject in listsToPool[bulletType])
         {
             if (!gameObject.activeInHierarchy)

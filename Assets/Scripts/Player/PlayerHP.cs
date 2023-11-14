@@ -9,7 +9,7 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
     [SerializeField] private GameObject particle;
     [SerializeField] private AudioSource explotionSound;
 
-    private bool shieldActivated;
+    public bool shieldActivated;
 
     public float HP { get { return hp; } set {  hp = value; } }
     public bool ShieldActivated {  get { return shieldActivated; } set {  shieldActivated = value; } }
