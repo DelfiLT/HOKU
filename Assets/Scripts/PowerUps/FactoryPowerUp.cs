@@ -17,7 +17,7 @@ public class FactoryPowerUp : MonoBehaviour
         }
     }
 
-    public PowerUps createPowerUp(string powerUpName, Transform spawn)
+    public PowerUps CreatePowerUp(string powerUpName, Transform spawn)
     {
         if(powerUpsDictionary.TryGetValue(powerUpName, out PowerUps powerPrefab))
         {
