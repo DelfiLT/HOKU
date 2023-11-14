@@ -14,8 +14,8 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] protected float minRange;
     [SerializeField] protected float maxRange;
     [SerializeField] protected GameObject particle;
-    [SerializeField] protected int rotateSpeed;
 
+    protected int rotateSpeed = 10;
     protected Transform target;
     protected float distance;
 

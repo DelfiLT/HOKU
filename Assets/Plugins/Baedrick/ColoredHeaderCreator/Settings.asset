@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Settings
   m_EditorClassIdentifier: 
   headerSettings:
-    headerText: MAP
-    headerColor: {r: 0.49056602, g: 0.06710574, b: 0.43727162, a: 1}
+    headerText: scene general
+    headerColor: {r: 1, g: 0.9395106, b: 0, a: 1}
     textAlignmentOptions: 0
     fontStyleOptions: 1
     fontSize: 12
-    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    fontColor: {r: 0, g: 0, b: 0, a: 1}
     dropShadow: 0

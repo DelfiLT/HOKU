@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Shield : PowerUps
 {
-    public override string powerUpName => "Shield";
+    public override string powerUpName => PowerUpType.Shield.ToString();
 
 }
