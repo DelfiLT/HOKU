@@ -5,9 +5,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerHP : MonoBehaviour, IgetDamagedInterface
 {
-    public int hp;
+    [SerializeField] private float hp;
     [SerializeField] private GameObject particle;
     [SerializeField] private AudioSource explotionSound;
+
+    private bool shieldActivated;
+
+    public float HP { get { return hp; } set {  hp = value; } }
+    public bool ShieldActivated {  get { return shieldActivated; } set {  shieldActivated = value; } }
+
+    private void Start()
+    {
+        shieldActivated = false;
+    }
 
     private void Update()
     {
@@ -19,11 +29,19 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
                 StartCoroutine(Die());
             }
         }
+
+        if(hp > 100)
+        {
+            hp = 100;
+        }
     }
 
     public void GetDamaged(int damage)
     {
-        hp -= damage;
+        if (!shieldActivated)
+        {
+            hp -= damage;
+        }
     }
 
     IEnumerator Die()

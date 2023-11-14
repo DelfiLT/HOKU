@@ -9,9 +9,9 @@ public class Bullet : MonoBehaviour
     public int poolAmmount;
     public GameObject particles;
     [SerializeField] private int damage;
+    [SerializeField] private float bulletForce;
 
-
-    [SerializeField] float bulletForce;
+    public int Damage { get { return damage; } set {  damage = value; } }
 
     void Update()
     {

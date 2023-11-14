@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1731328413794648520}
   - component: {fileID: 4200141997083401444}
   - component: {fileID: 1314791143379784765}
+  - component: {fileID: 9037508513683737405}
   m_Layer: 0
   m_Name: Heal
   m_TagString: Untagged
@@ -119,3 +120,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30709a619d106c41b6f2ce6b80a21c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7667000188693557197, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
+  healBoost: 20
+--- !u!58 &9037508513683737405
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5398672923945436740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.9444444}
+  serializedVersion: 2
+  m_Radius: 0.61111116

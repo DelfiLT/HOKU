@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2403632483843899138}
   - component: {fileID: 221916502973260334}
   - component: {fileID: 9105024878529057002}
+  - component: {fileID: 6073775126950723455}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -119,3 +120,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b852691abc982474f80a62966041644e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7667000188693557197, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
+  shieldSprite: {fileID: 8725234651412161890, guid: 2cd5a5eeb3eced244b5c76a1d223f8a9, type: 3}
+--- !u!58 &6073775126950723455
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8337976474792769678}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.8000001}
+  serializedVersion: 2
+  m_Radius: 0.6

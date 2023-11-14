@@ -10,6 +10,7 @@ TagManager:
   - BSBullet
   - Enemy
   - ExplotionSound
+  - powerSprite
   layers:
   - Default
   - TransparentFX
