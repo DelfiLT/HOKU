@@ -26108,7 +26108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUps:
-  - {fileID: 3560702243268068253, guid: fb41ca9c26f486446bb9c2616116a01c, type: 3}
+  - {fileID: 9105024878529057002, guid: fb41ca9c26f486446bb9c2616116a01c, type: 3}
+  - {fileID: 3712099194153608167, guid: 9bba5a32c20506840a66507840014fa4, type: 3}
+  - {fileID: 1314791143379784765, guid: ca15265c45e8935449dda379bc49a2f0, type: 3}
 --- !u!1 &1427687331
 GameObject:
   m_ObjectHideFlags: 0
@@ -26884,6 +26886,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1838113652}
     m_Modifications:
+    - target: {fileID: 2178925143036292259, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
+      propertyPath: weaponSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7667000188693557187, guid: ff60fcd1b7f289e48b8ba755e65a993f, type: 3}
       propertyPath: m_RootOrder
       value: 3

@@ -5,4 +5,8 @@ using UnityEngine;
 public abstract class PowerUps : MonoBehaviour
 {
     public abstract string powerUpName { get; }
+
+    protected GameObject player;
+
+    public abstract void Activate();
 }
