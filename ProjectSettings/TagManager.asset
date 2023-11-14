@@ -9,6 +9,7 @@ TagManager:
   - RBullet
   - BSBullet
   - Enemy
+  - ExplotionSound
   layers:
   - Default
   - TransparentFX

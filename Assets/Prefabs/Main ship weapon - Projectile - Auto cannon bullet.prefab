@@ -4984,7 +4984,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponType: 0
   poolAmmount: 30
-  bulletForce: 15
+  particles: {fileID: 1844343554115156752, guid: 8fbd911c14a1c2c48a7d2ec743d0e035, type: 3}
+  damage: 2
+  bulletForce: 20
 --- !u!1 &8332371966456839861
 GameObject:
   m_ObjectHideFlags: 0

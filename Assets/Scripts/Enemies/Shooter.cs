@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class Shooter : Enemy
+public class Shooter : Enemy, IgetDamagedInterface
 {
     public override string enemyName => EnemyType.Shooter.ToString();
 
@@ -19,19 +19,9 @@ public class Shooter : Enemy
 
     private void Update()
     {
-        distance = Vector2.Distance(target.transform.position, transform.position);
+        Follow();
 
         shootTimer += Time.deltaTime;
-
-        if (target != null)
-        {
-            distance = Vector2.Distance(target.transform.position, transform.position);
-            if (distance > minRange && distance < maxRange)
-            {
-                Follow();
-            }
-        }
-
         if (distance <= maxRange)
         {
             if(shootTimer > 0.5f) 
@@ -40,6 +30,16 @@ public class Shooter : Enemy
                 Shoot();
             }
         }
+
+        if (hp <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void GetDamaged(int damage)
+    {
+        hp -= damage;
     }
 
     public void Shoot()

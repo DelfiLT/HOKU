@@ -103,6 +103,10 @@ MonoBehaviour:
   velocity: 10
   minRange: 0
   maxRange: 10
+  particle: {fileID: 8572511086080315407, guid: cd926378b6531dc4cbb036f3f1121f44, type: 3}
+  rotateSpeed: 10
+  explotionSound: {fileID: 0}
+  explotionDamage: 10
 --- !u!61 &6456686724919235345
 BoxCollider2D:
   m_ObjectHideFlags: 0

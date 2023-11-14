@@ -2,23 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Healer : Enemy
+public class Healer : Enemy, IgetDamagedInterface
 {
     public override string enemyName => EnemyType.Healer.ToString();
 
     private void Update()
     {
         target = GameObject.FindGameObjectWithTag("Enemy")?.transform;
+        Follow();
 
-        if (target != null)
+        if (hp <= 0)
         {
-            distance = Vector2.Distance(target.transform.position, transform.position);
-            if (distance > minRange && distance < maxRange)
-            {
-                Follow();
-            }
+            Die();
         }
+    }
 
+    public void GetDamaged(int damage)
+    {
+        hp -= damage;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -28,5 +29,4 @@ public class Healer : Enemy
             collision.gameObject.GetComponent<Enemy>().HP++;
         }
     }
-
 }

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 7667000188693557184}
   - component: {fileID: 7667000188693557191}
   - component: {fileID: 219072123162178281}
+  - component: {fileID: -1377868907466744797}
   m_Layer: 0
   m_Name: ShipPlayer
   m_TagString: Player
@@ -360,6 +361,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1377868907466744797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7667000188693557197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90501b064c1d3442bd0d1d28398e503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 50
+  particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
+  explotionSound: {fileID: 6059437920950842123, guid: ae5ef5e01472fd643bb155a36469bc78, type: 3}
 --- !u!1001 &8069344253975481568
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
-public class Bomber : Enemy
+public class Bomber : Enemy, IgetDamagedInterface
 {
     public override string enemyName => EnemyType.Bomber.ToString();
+    [SerializeField] private int explotionDamage;
 
     private void Awake()
     {
@@ -13,23 +15,25 @@ public class Bomber : Enemy
 
     private void Update()
     {
-        distance = Vector2.Distance(target.transform.position, transform.position);
+        Follow();
 
-        if (target != null)
+        if (hp <= 0)
         {
-            distance = Vector2.Distance(target.transform.position, transform.position);
-            if (distance > minRange && distance < maxRange)
-            {
-                Follow();
-            }
+            Die();
         }
+    }
+
+    public void GetDamaged(int damage)
+    {
+        hp -= damage;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            collision.gameObject.GetComponent<IgetDamagedInterface>().GetDamaged(explotionDamage);
+            Die();
         }
     }
 }

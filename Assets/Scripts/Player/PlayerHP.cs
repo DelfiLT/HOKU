@@ -2,22 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-
-public class PlayerHP : MonoBehaviour, IpowerUp
+using UnityEngine.SceneManagement;
+public class PlayerHP : MonoBehaviour, IgetDamagedInterface
 {
     public int hp;
+    [SerializeField] private GameObject particle;
+    [SerializeField] private AudioSource explotionSound;
 
-    public void PickOPowerUp(string objectName)
+    private void Update()
     {
-        if (objectName == "Shield")
+        if (hp < 0)
         {
-            StartCoroutine(activeShield());
+            hp = 0;
+            if(hp == 0)
+            {
+                StartCoroutine(Die());
+            }
         }
     }
 
-    IEnumerator activeShield()
+    public void GetDamaged(int damage)
     {
-        hp = hp + 100;
-        yield return new WaitForSeconds(10f);
+        hp -= damage;
+    }
+
+    IEnumerator Die()
+    {
+        explotionSound.Play();
+        Instantiate(particle, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(2);
     }
 }

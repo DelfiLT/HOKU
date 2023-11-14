@@ -101,8 +101,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 100
   velocity: 8
-  minRange: 0
+  minRange: 1
   maxRange: 10
+  particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
+  rotateSpeed: 10
+  explotionSound: {fileID: 6059437920950842123, guid: ae5ef5e01472fd643bb155a36469bc78, type: 3}
 --- !u!50 &4498628815653467105
 Rigidbody2D:
   serializedVersion: 4
