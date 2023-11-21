@@ -100,10 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5755077cd30be408d38c1f173b52fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 30
   velocity: 10
   minRange: 5
-  maxRange: 10
+  maxRange: 15
   particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
   bulletSpawn: {fileID: 3047413164249338990}
 --- !u!61 &7355371277670390951

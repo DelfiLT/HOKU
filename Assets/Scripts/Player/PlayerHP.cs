@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class PlayerHP : MonoBehaviour, IgetDamagedInterface
 {
     [SerializeField] private float hp;
     [SerializeField] private GameObject particle;
     [SerializeField] private AudioSource explotionSound;
+    public Slider slider;
 
     private bool shieldActivated;
 
@@ -21,6 +23,8 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
 
     private void Update()
     {
+        slider.value = hp;
+
         if (hp < 0)
         {
             hp = 0;

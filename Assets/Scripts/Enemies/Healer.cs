@@ -12,9 +12,9 @@ public class Healer : Enemy, IgetDamagedInterface
         Follow();
         RotateTowarsTarget();
 
-        if (hp > 100)
+        if (hp > 30)
         {
-            hp = 100;
+            hp = 30;
         }
 
         if (hp <= 0)

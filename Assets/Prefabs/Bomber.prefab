@@ -99,13 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ada7fb4f46c2ee43ac0737e0676abb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 5
   velocity: 10
   minRange: 0
-  maxRange: 10
+  maxRange: 15
   particle: {fileID: 8572511086080315407, guid: cd926378b6531dc4cbb036f3f1121f44, type: 3}
-  rotateSpeed: 10
-  explotionSound: {fileID: 0}
   explotionDamage: 10
 --- !u!61 &6456686724919235345
 BoxCollider2D:

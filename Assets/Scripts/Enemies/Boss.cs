@@ -61,7 +61,7 @@ public class Boss : MonoBehaviour, IgetDamagedInterface
 
         if (bossHp <= 0)
         {
-            //poner escena de victoria
+            SceneManager.LoadScene(3);
         }
     }
 

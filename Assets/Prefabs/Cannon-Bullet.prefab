@@ -104,7 +104,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.25, y: 1}
+    oldSize: {x: 0.33333334, y: 1.3333334}
     newSize: {x: 0.25, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,5 +149,5 @@ MonoBehaviour:
   weaponType: 5
   poolAmmount: 10
   particles: {fileID: 1844343554115156752, guid: 8fbd911c14a1c2c48a7d2ec743d0e035, type: 3}
-  damage: 5
+  damage: 4
   bulletForce: 10

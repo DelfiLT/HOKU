@@ -4913,10 +4913,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7131c54b8ecfcd24a90b594bf8021ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 10
   velocity: 8
-  minRange: 1
-  maxRange: 10
+  minRange: 2
+  maxRange: 7
   particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
 --- !u!50 &4498628815653467105
 Rigidbody2D:
