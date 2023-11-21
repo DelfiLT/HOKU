@@ -4,4 +4,6 @@ public enum WeaponType
     BigSpace,
     Rockets,
     Shooter,
+    Boss,
+    Cannon
 }

@@ -2,28 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shield : PowerUps
+public class Damage : PowerUps
 {
-    public override string powerUpName => PowerUpType.Shield.ToString();
+    public override string powerUpName => PowerUpType.Damage.ToString();
     
-    [SerializeField] private Sprite shieldSprite;
+    [SerializeField] private Sprite damageSprite;
 
     public override void Activate()
     {
-        StartCoroutine(ActiveShield());
+        StartCoroutine(ActiveDamage());
     }
 
-    IEnumerator ActiveShield()
+    IEnumerator ActiveDamage()
     {
-        player.GetComponent<PlayerHP>().ShieldActivated = true;
+        player.GetComponent<PlayerShooting>().DamageBoost = true;
 
         player.GetComponent<PlayerShooting>().powerUpSprite.enabled = true;
-        player.GetComponent<PlayerShooting>().powerUpSprite.sprite = shieldSprite;
+        player.GetComponent<PlayerShooting>().powerUpSprite.sprite = damageSprite;
         this.GetComponent<SpriteRenderer>().enabled = false;
 
         yield return new WaitForSeconds(5);
 
-        player.GetComponent<PlayerHP>().ShieldActivated = false;
+        player.GetComponent<PlayerShooting>().DamageBoost = false;
 
         player.GetComponent<PlayerShooting>().powerUpSprite.enabled = false;
         Destroy(gameObject);

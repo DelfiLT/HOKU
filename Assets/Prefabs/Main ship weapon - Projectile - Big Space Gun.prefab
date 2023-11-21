@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8106745034181126080}
   m_Layer: 0
   m_Name: Main ship weapon - Projectile - Big Space Gun
-  m_TagString: BSBullet
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

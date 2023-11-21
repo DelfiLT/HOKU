@@ -10,6 +10,12 @@ public class Healer : Enemy, IgetDamagedInterface
     {
         target = GameObject.FindGameObjectWithTag("Enemy")?.transform;
         Follow();
+        RotateTowarsTarget();
+
+        if (hp > 100)
+        {
+            hp = 100;
+        }
 
         if (hp <= 0)
         {
@@ -22,11 +28,16 @@ public class Healer : Enemy, IgetDamagedInterface
         hp -= damage;
     }
 
+    public void HealAlly(Collision2D collision)
+    {
+        collision.gameObject.GetComponent<Enemy>().HP++;
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<Enemy>().HP++;
+            HealAlly(collision);
         }
     }
 }
