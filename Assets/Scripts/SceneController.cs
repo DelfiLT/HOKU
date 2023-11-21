@@ -9,7 +9,7 @@ public class SceneController : MonoBehaviour
 {
     public bool Level;
     public int indexlevel;
-    [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioSource music;
     [SerializeField] private AudioSource audioWhoosh;
     [SerializeField] private AudioSource audiofire;
     [SerializeField] private GameObject panelSettings;
@@ -33,13 +33,13 @@ public class SceneController : MonoBehaviour
     public void ChangePanel()
     {
         panelSettings.SetActive(true);
-        audio.Play();
+        music.Play();
     }
 
     public void exitPanel()
     {
         panelSettings.SetActive(false);
-        audio.Play();
+        music.Play();
     }
 
     public void Play()

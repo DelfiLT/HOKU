@@ -5,9 +5,9 @@ using static UnityEngine.ParticleSystem;
 
 public class Heal : PowerUps
 {
-    [SerializeField] protected GameObject particle;
     public override string powerUpName => PowerUpType.Heal.ToString();
-    
+
+    [SerializeField] protected GameObject particle;
     public int healBoost;
 
     public override void Activate()

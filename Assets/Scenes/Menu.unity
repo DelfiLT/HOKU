@@ -7769,8 +7769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 0
   indexlevel: 0
-  audio: {fileID: 985499279}
-  audioWhoosh: {fileID: 1087213410}
+  music: {fileID: 1347959556}
+  audioWhoosh: {fileID: 1209395513}
   audiofire: {fileID: 1087213410}
   panelSettings: {fileID: 1958036260}
   timeline: {fileID: 363962309}

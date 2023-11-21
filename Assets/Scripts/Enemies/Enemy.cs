@@ -46,10 +46,13 @@ public abstract class Enemy : MonoBehaviour
 
     protected void RotateTowarsTarget()
     {
-        Vector2 targetDirection = target.position - transform.position;
-        float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
-        Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
+        if (target != null)
+        {
+            Vector2 targetDirection = target.position - transform.position;
+            float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
+            Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
+            transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
+        }
     }
 
 }

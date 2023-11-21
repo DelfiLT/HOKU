@@ -391,15 +391,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9041a431e3a14fe4e895e5263990e2c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 3708665488179893315}
-  powerUpSprite: {fileID: 7737766166275173593}
+  bulletSpawn: {fileID: 3708665488179893315}
+  weaponSprite: {fileID: 8954790219504165848}
   weaponSprites:
   - {fileID: -366965912, guid: 2e15b97a359b2b44fbf5149a1415cafe, type: 3}
   - {fileID: -1638782856, guid: d1d4f31f0e182464dbeac787ce07a9f4, type: 3}
   - {fileID: -1621788537, guid: 313f7dbcc240a29418569431954244c9, type: 3}
   - {fileID: -1156674052, guid: 3137052c838c5ad449e21d037a5241da, type: 3}
-  weaponSprite: {fileID: 8954790219504165848}
-  shootSound: {fileID: 0}
+  powerUpSprite: {fileID: 7737766166275173593}
 --- !u!114 &7667000188693557184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b90501b064c1d3442bd0d1d28398e503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 150
+  hp: 100
   particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
   explotionSound: {fileID: 6059437920950842123, guid: ae5ef5e01472fd643bb155a36469bc78, type: 3}
 --- !u!1001 &8069344253975481568

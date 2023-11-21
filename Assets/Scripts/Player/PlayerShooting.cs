@@ -5,18 +5,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerShooting : MonoBehaviour, Iweapon
 {
+    [Header("Shoot config")]
+    public Transform bulletSpawn;
+    public SpriteRenderer weaponSprite;
+    public List<Sprite> weaponSprites;
     private string bulletName;
-    public Transform spawn;
+
+    [Header("PowerUp")]
     public SpriteRenderer powerUpSprite;
 
-    public bool damageBoost;
-    public bool DamageBoost { get { return damageBoost; } set { damageBoost = value; } }
-
-    [SerializeField] List<Sprite> weaponSprites;
-    [SerializeField] private SpriteRenderer weaponSprite;
-    [SerializeField] private AudioSource shootSound;
-
     private PlayerInputs playerInput;
+    private bool damageBoost;
+    public bool DamageBoost { get { return damageBoost; } set { damageBoost = value; } }
 
     private void Start()
     {
@@ -34,7 +34,7 @@ public class PlayerShooting : MonoBehaviour, Iweapon
         } 
         else
         {
-            Debug.Log("You have no weapon equiped");
+            Debug.Log("No weapon equiped");
         }
     }
 
@@ -53,10 +53,9 @@ public class PlayerShooting : MonoBehaviour, Iweapon
                 bullet.GetComponent<Bullet>().Damage = 2;
             }
 
-            bullet.transform.position = spawn.position;
-            bullet.transform.rotation = spawn.rotation;
             bullet.SetActive(true);
-            shootSound.Play();
+            bullet.transform.position = bulletSpawn.position;
+            bullet.transform.rotation = bulletSpawn.rotation;
         } 
     }
 
