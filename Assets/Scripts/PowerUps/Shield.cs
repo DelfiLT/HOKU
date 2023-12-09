@@ -15,17 +15,17 @@ public class Shield : PowerUps
 
     IEnumerator ActiveShield()
     {
-        player.GetComponent<PlayerHP>().ShieldActivated = true;
-
-        player.GetComponent<PlayerShooting>().powerUpSprite.enabled = true;
-        player.GetComponent<PlayerShooting>().powerUpSprite.sprite = shieldSprite;
         this.GetComponent<SpriteRenderer>().enabled = false;
+
+        playerHp.ShieldActivated = true;
+        playerShooting.powerUpSprite.enabled = true;
+        playerShooting.powerUpSprite.sprite = shieldSprite;
 
         yield return new WaitForSeconds(5);
 
-        player.GetComponent<PlayerHP>().ShieldActivated = false;
+        playerHp.ShieldActivated = false;
+        playerShooting.powerUpSprite.enabled = false;
 
-        player.GetComponent<PlayerShooting>().powerUpSprite.enabled = false;
         Destroy(gameObject);
     }
 }

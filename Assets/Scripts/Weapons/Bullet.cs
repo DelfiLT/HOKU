@@ -12,15 +12,19 @@ public class Bullet : MonoBehaviour
 
     [Header("Bullet Stats")]
     [SerializeField] private int damage;
+    private int boostedDamage;
     [SerializeField] private float bulletForce;
 
     private int rotateSpeed = 10;
     private Transform player;
 
     public int Damage { get { return damage; } set {  damage = value; } }
+    public int BoostedDamage { get { return boostedDamage; } set { boostedDamage = value; } }
 
-    private void Start()
+    private void Awake()
     {
+        boostedDamage = damage * 2;    
+
         if(weaponType == WeaponType.Cannon)
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -53,7 +57,6 @@ public class Bullet : MonoBehaviour
 
         if(collision.gameObject.CompareTag("bullet") && weaponType == WeaponType.Cannon)
         {
-            Debug.Log("colisione");
             this.gameObject.SetActive(false);
             Instantiate(particles, transform.position, Quaternion.identity);
         }

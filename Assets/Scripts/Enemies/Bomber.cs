@@ -11,6 +11,7 @@ public class Bomber : Enemy, IgetDamagedInterface
     private void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player")?.transform;
+        maxHP = hp;
     }
 
     private void Update()
@@ -18,9 +19,9 @@ public class Bomber : Enemy, IgetDamagedInterface
         Follow();
         RotateTowarsTarget();
 
-        if (hp > 100)
+        if (hp > maxHP)
         {
-            hp = 100;
+            hp = maxHP;
         }
 
         if (hp <= 0)

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface Iweapon
 {
-    void PickWeapon(WeaponType weaponType);
+    void PickWeapon(WeaponType weaponType, float shootTimer);
 }

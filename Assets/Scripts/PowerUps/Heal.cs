@@ -12,7 +12,8 @@ public class Heal : PowerUps
 
     public override void Activate()
     {
-        player.GetComponent<PlayerHP>().HP = player.GetComponent<PlayerHP>().HP + healBoost;
+        playerHp.HP = playerHp.HP + healBoost;
+
         Instantiate(particle, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

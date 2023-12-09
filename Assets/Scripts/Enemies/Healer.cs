@@ -6,15 +6,20 @@ public class Healer : Enemy, IgetDamagedInterface
 {
     public override string enemyName => EnemyType.Healer.ToString();
 
+    private void Awake()
+    {
+        maxHP = hp;
+    }
+
     private void Update()
     {
         target = GameObject.FindGameObjectWithTag("Enemy")?.transform;
         Follow();
         RotateTowarsTarget();
 
-        if (hp > 30)
+        if (hp > maxHP)
         {
-            hp = 30;
+            hp = maxHP;
         }
 
         if (hp <= 0)

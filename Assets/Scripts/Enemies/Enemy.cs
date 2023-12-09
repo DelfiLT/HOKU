@@ -10,6 +10,7 @@ public abstract class Enemy : MonoBehaviour
 
     [Header("Enemy Stats")]
     [SerializeField] protected float hp;
+    protected float maxHP;
     [SerializeField] protected float velocity;
     [SerializeField] protected float minRange;
     [SerializeField] protected float maxRange;
@@ -18,14 +19,6 @@ public abstract class Enemy : MonoBehaviour
     protected int rotateSpeed = 10;
     protected Transform target;
     protected float distance;
-
-    private void Update()
-    {
-        if(hp > 100)
-        {
-           hp = 100;
-        }
-    }
 
     protected void Follow()
     {
@@ -54,5 +47,4 @@ public abstract class Enemy : MonoBehaviour
             transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
         }
     }
-
 }

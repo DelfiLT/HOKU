@@ -4916,7 +4916,7 @@ MonoBehaviour:
   hp: 10
   velocity: 8
   minRange: 2
-  maxRange: 7
+  maxRange: 20
   particle: {fileID: 8572511086080315407, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
 --- !u!50 &4498628815653467105
 Rigidbody2D:

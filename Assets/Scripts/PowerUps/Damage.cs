@@ -15,17 +15,17 @@ public class Damage : PowerUps
 
     IEnumerator ActiveDamage()
     {
-        player.GetComponent<PlayerShooting>().DamageBoost = true;
-
-        player.GetComponent<PlayerShooting>().powerUpSprite.enabled = true;
-        player.GetComponent<PlayerShooting>().powerUpSprite.sprite = damageSprite;
         this.GetComponent<SpriteRenderer>().enabled = false;
+
+        playerShooting.DamageBoost = true;
+        playerShooting.powerUpSprite.enabled = true;
+        playerShooting.powerUpSprite.sprite = damageSprite;
 
         yield return new WaitForSeconds(5);
 
-        player.GetComponent<PlayerShooting>().DamageBoost = false;
+        playerShooting.DamageBoost = false;
+        playerShooting.powerUpSprite.enabled = false;
 
-        player.GetComponent<PlayerShooting>().powerUpSprite.enabled = false;
         Destroy(gameObject);
     }
 }

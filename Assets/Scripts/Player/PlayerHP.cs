@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class PlayerHP : MonoBehaviour, IgetDamagedInterface
 {
     [SerializeField] private float hp;
+    private float maxHp;
+
     [SerializeField] private GameObject particle;
     [SerializeField] private AudioSource explotionSound;
     public Slider slider;
@@ -19,6 +21,7 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
     private void Start()
     {
         shieldActivated = false;
+        maxHp = hp;
     }
 
     private void Update()
@@ -34,9 +37,9 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
             }
         }
 
-        if(hp > 100)
+        if(hp > maxHp)
         {
-            hp = 100;
+            hp = maxHp;
         }
     }
 

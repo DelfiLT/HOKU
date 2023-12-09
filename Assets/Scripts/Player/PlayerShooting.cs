@@ -10,6 +10,8 @@ public class PlayerShooting : MonoBehaviour, Iweapon
     public SpriteRenderer weaponSprite;
     public List<Sprite> weaponSprites;
     private string bulletName;
+    private float shootTime;
+    private float timer;
 
     [Header("PowerUp")]
     public SpriteRenderer powerUpSprite;
@@ -20,17 +22,27 @@ public class PlayerShooting : MonoBehaviour, Iweapon
 
     private void Start()
     {
+        shootTime = 0;
         playerInput = new PlayerInputs();
         playerInput.Player.Enable();
         playerInput.Player.Shoot.performed += Shoot;
         weaponSprite.enabled = false;
     }
 
+    private void Update()
+    {
+        timer += Time.deltaTime;
+    }
+
     public void Shoot(InputAction.CallbackContext context)
     {
         if(bulletName != "" && bulletName != null)
         {
-            SpawnBullet();
+            if(timer > shootTime)
+            {
+                timer = 0;
+                SpawnBullet();
+            }
         } 
         else
         {
@@ -44,13 +56,15 @@ public class PlayerShooting : MonoBehaviour, Iweapon
 
         if (bullet != null)
         {
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+
             if (damageBoost)
             {
-                bullet.GetComponent<Bullet>().Damage = 4;
+                bulletScript.Damage = bulletScript.BoostedDamage;
             }
             else
             {
-                bullet.GetComponent<Bullet>().Damage = 2;
+                bulletScript.Damage = bulletScript.Damage;
             }
 
             bullet.SetActive(true);
@@ -59,8 +73,9 @@ public class PlayerShooting : MonoBehaviour, Iweapon
         } 
     }
 
-    public void PickWeapon(WeaponType weaponType)
+    public void PickWeapon(WeaponType weaponType, float shootTimer)
     {
+        shootTime = shootTimer;
         switch (weaponType)
         {
             case WeaponType.AutoCannon:

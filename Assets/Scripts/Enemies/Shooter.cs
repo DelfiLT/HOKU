@@ -15,6 +15,7 @@ public class Shooter : Enemy, IgetDamagedInterface
     private void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player")?.transform;
+        maxHP = hp;
     }
 
     private void Update()
@@ -22,9 +23,9 @@ public class Shooter : Enemy, IgetDamagedInterface
         Follow();
         RotateTowarsTarget();
 
-        if (hp > 100)
+        if (hp > maxHP)
         {
-            hp = 100;
+            hp = maxHP;
         }
 
         shootTimer += Time.deltaTime;

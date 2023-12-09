@@ -20304,7 +20304,7 @@ GameObject:
   - component: {fileID: 521511779}
   - component: {fileID: 521511780}
   m_Layer: 0
-  m_Name: ----------SOUNDS-----------
+  m_Name: SOUNDS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20391,7 +20391,7 @@ GameObject:
   - component: {fileID: 633333296}
   - component: {fileID: 633333297}
   m_Layer: 0
-  m_Name: ----------MAP----------
+  m_Name: MAP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25918,7 +25918,7 @@ GameObject:
   - component: {fileID: 1147779910}
   - component: {fileID: 1147779911}
   m_Layer: 0
-  m_Name: -----OBJECTS CONFIG------
+  m_Name: OBJECTS CONFIG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
