@@ -14659,7 +14659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleType: 1
-  poolAmmount: 10
+  poolAmmount: 2
 --- !u!1 &8572511086133607842
 GameObject:
   m_ObjectHideFlags: 0

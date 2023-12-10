@@ -94,7 +94,7 @@ public class Boss : MonoBehaviour, IgetDamagedInterface
     IEnumerator Victory()
     {
         AudioManager.InstanceAudio.PlaySound(explotionClip);
-        GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleExplotion.ToString());
+        GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleBoss.ToString());
 
         if (prefab != null)
         {

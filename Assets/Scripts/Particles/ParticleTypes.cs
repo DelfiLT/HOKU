@@ -12,5 +12,6 @@ public enum ParticleTypes
    ParticleDamage,
    ParticleWeapon,
    ParticleHealer,
-   ParticleShooter
+   ParticleShooter,
+   ParticleBoss
 }
