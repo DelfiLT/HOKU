@@ -41,6 +41,14 @@ public class Shooter : Enemy, IgetDamagedInterface
         if (hp <= 0)
         {
             Die();
+            GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleShooter.ToString());
+
+            if (prefab != null)
+            {
+                prefab.transform.position = transform.position;
+                prefab.transform.rotation = transform.rotation;
+                prefab.SetActive(true);
+            }
         }
     }
 

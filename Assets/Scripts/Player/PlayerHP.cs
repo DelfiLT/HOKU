@@ -9,8 +9,7 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
     [SerializeField] private float hp;
     private float maxHp;
 
-    [SerializeField] private GameObject particle;
-    [SerializeField] private AudioSource explotionSound;
+    [SerializeField] private AudioClip explotionSound;
     public Slider slider;
 
     private bool shieldActivated;
@@ -67,8 +66,14 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
             child.enabled = false;
         }
 
-        explotionSound.Play(); //este sonido no esta funcionando
-        Instantiate(particle, transform.position, Quaternion.identity);
+        AudioManager.InstanceAudio.PlaySound(explotionSound);
+        GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleExplotion.ToString());
+        if (prefab != null)
+        {
+            prefab.transform.position = transform.position;
+            prefab.transform.rotation = transform.rotation;
+            prefab.SetActive(true);
+        }
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(2);
     }

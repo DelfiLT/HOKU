@@ -115,5 +115,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 8888274616332859980, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
+      propertyPath: poolAmmount
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888274616332859980, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}
+      propertyPath: particleType
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3418e04f2f79400499b3ad815e36bb05, type: 3}

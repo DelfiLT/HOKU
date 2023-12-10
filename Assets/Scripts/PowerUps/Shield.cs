@@ -21,6 +21,14 @@ public class Shield : PowerUps
         playerShooting.powerUpSprite.enabled = true;
         playerShooting.powerUpSprite.sprite = shieldSprite;
 
+        GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleShield.ToString());
+        if (prefab != null)
+        {
+            prefab.transform.position = transform.position;
+            prefab.transform.rotation = transform.rotation;
+            prefab.SetActive(true);
+        }
+
         yield return new WaitForSeconds(5);
 
         playerHp.ShieldActivated = false;

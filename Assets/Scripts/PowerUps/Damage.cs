@@ -21,6 +21,14 @@ public class Damage : PowerUps
         playerShooting.powerUpSprite.enabled = true;
         playerShooting.powerUpSprite.sprite = damageSprite;
 
+        GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleDamage.ToString());
+        if (prefab != null)
+        {
+            prefab.transform.position = transform.position;
+            prefab.transform.rotation = transform.rotation;
+            prefab.SetActive(true);
+        }
+
         yield return new WaitForSeconds(5);
 
         playerShooting.DamageBoost = false;

@@ -9,6 +9,7 @@ public abstract class PowerUps : MonoBehaviour
     protected GameObject player;
     protected PlayerHP playerHp;
     protected PlayerShooting playerShooting;
+    [SerializeField] protected AudioClip PickAudio;
 
     public abstract void Activate();
 
@@ -24,6 +25,7 @@ public abstract class PowerUps : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Activate();
+            AudioManager.InstanceAudio.PlaySound(PickAudio);
         }
     }
 }

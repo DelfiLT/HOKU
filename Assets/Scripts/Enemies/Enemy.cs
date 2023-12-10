@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
+using static UnityEngine.UI.Image;
 
 public abstract class Enemy : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] protected float velocity;
     [SerializeField] protected float minRange;
     [SerializeField] protected float maxRange;
-    [SerializeField] protected GameObject particle;
+    [SerializeField] protected AudioClip dieAudio;
 
     protected int rotateSpeed = 10;
     protected Transform target;
@@ -34,7 +35,7 @@ public abstract class Enemy : MonoBehaviour
     protected void Die() 
     {
         Destroy(gameObject);
-        Instantiate(particle, transform.position, Quaternion.identity);
+        AudioManager.InstanceAudio.PlaySound(dieAudio);
     }
 
     protected void RotateTowarsTarget()

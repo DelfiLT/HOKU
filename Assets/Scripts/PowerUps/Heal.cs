@@ -7,14 +7,21 @@ public class Heal : PowerUps
 {
     public override string powerUpName => PowerUpType.Heal.ToString();
 
-    [SerializeField] protected GameObject particle;
     public int healBoost;
 
     public override void Activate()
     {
         playerHp.HP = playerHp.HP + healBoost;
 
-        Instantiate(particle, transform.position, Quaternion.identity);
+        GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleHealiing.ToString());
+
+        if (prefab != null)
+        {
+            prefab.transform.position = transform.position;
+            prefab.transform.rotation = transform.rotation;
+            prefab.SetActive(true);
+        }
+
         Destroy(gameObject);
     }
 }

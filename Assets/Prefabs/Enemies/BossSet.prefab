@@ -398,6 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossHp: 100
   range: 20
+  explotionClip: {fileID: 8300000, guid: 76d9ef8c3cf20ed4ca5dd8aea30f8409, type: 3}
   bulletSpawn: {fileID: 3941141862446445800}
   cannonLeftSpawn: {fileID: 3941141863266165904}
   cannonRightSpawn: {fileID: 3941141862177878891}

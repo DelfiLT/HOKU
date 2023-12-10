@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 793259702002912971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.504759, y: -0.3426814, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -150,5 +150,5 @@ MonoBehaviour:
   velocity: 10
   minRange: 0
   maxRange: 15
-  particle: {fileID: 8572511086080315407, guid: cd926378b6531dc4cbb036f3f1121f44, type: 3}
+  dieAudio: {fileID: 8300000, guid: 76d9ef8c3cf20ed4ca5dd8aea30f8409, type: 3}
   explotionDamage: 10

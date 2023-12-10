@@ -102,6 +102,7 @@ MonoBehaviour:
   weaponType: 3
   poolAmmount: 20
   particles: {fileID: 1844343554115156752, guid: 8fbd911c14a1c2c48a7d2ec743d0e035, type: 3}
+  damageAudio: {fileID: 8300000, guid: af33597209d082443b2f9929fd6c5801, type: 3}
   damage: 1
   bulletForce: 20
 --- !u!61 &-2322843574578588489

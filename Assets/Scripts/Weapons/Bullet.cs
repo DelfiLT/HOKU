@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     [Header("Bullet Config")]
     public WeaponType weaponType;
     public int poolAmmount;
-    public GameObject particles;
+    [SerializeField] private AudioClip damageAudio;
 
     [Header("Bullet Stats")]
     [SerializeField] private int damage;
@@ -58,14 +58,30 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.CompareTag("bullet") && weaponType == WeaponType.Cannon)
         {
             this.gameObject.SetActive(false);
-            Instantiate(particles, transform.position, Quaternion.identity);
+            GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleBulletshoot.ToString());
+
+            if (prefab != null)
+            {
+                prefab.transform.position = transform.position;
+                prefab.transform.rotation = transform.rotation;
+                prefab.SetActive(true);
+            }
         }
 
         if (collision.gameObject.GetComponent<IgetDamagedInterface>() != null)
         {
-            Instantiate(particles, transform.position, Quaternion.identity);
+            GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleBulletshoot.ToString());
+
+            if (prefab != null)
+            {
+                prefab.transform.position = transform.position;
+                prefab.transform.rotation = transform.rotation;
+                prefab.SetActive(true);
+            }
+
             this.gameObject.SetActive(false);
             collision.gameObject.GetComponent<IgetDamagedInterface>().GetDamaged(damage);
+            AudioManager.InstanceAudio.PlayDamageSound(damageAudio);
         }
     }
 }

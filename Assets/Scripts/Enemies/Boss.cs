@@ -16,6 +16,7 @@ public class Boss : MonoBehaviour, IgetDamagedInterface
 
     [SerializeField] private float bossHp;
     [SerializeField] private float range;
+    [SerializeField] private AudioClip explotionClip;
     [SerializeField] Transform bulletSpawn;
     [SerializeField] Transform cannonLeftSpawn;
     [SerializeField] Transform cannonRightSpawn;
@@ -61,7 +62,7 @@ public class Boss : MonoBehaviour, IgetDamagedInterface
 
         if (bossHp <= 0)
         {
-            SceneManager.LoadScene(3);
+            StartCoroutine(Victory());
         }
     }
 
@@ -88,5 +89,21 @@ public class Boss : MonoBehaviour, IgetDamagedInterface
         float angle = Mathf.Atan2(targetDirection.y, targetDirection.x) * Mathf.Rad2Deg - 90f;
         Quaternion q = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.localRotation = Quaternion.Slerp(transform.localRotation, q, rotateSpeed);
+    }
+
+    IEnumerator Victory()
+    {
+        AudioManager.InstanceAudio.PlaySound(explotionClip);
+        GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleExplotion.ToString());
+
+        if (prefab != null)
+        {
+            prefab.transform.position = transform.position;
+            prefab.transform.rotation = transform.rotation;
+            prefab.SetActive(true);
+        }
+
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(3);
     }
 }

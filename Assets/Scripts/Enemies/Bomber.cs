@@ -41,6 +41,14 @@ public class Bomber : Enemy, IgetDamagedInterface
         {
             collision.gameObject.GetComponent<IgetDamagedInterface>().GetDamaged(explotionDamage);
             Die();
+            GameObject prefab = ParticlesObjectPool.ParticleInstance.GetPooledObject(ParticleTypes.ParticleExplotionBomber.ToString());
+
+            if (prefab != null)
+            {
+                prefab.transform.position = transform.position;
+                prefab.transform.rotation = transform.rotation;
+                prefab.SetActive(true);
+            }
         }
     }
 }

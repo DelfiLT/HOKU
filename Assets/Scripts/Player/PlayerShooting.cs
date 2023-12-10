@@ -12,6 +12,7 @@ public class PlayerShooting : MonoBehaviour, Iweapon
     private string bulletName;
     private float shootTime;
     private float timer;
+    [SerializeField] private AudioClip ShootClip;
 
     [Header("PowerUp")]
     public SpriteRenderer powerUpSprite;
@@ -42,6 +43,7 @@ public class PlayerShooting : MonoBehaviour, Iweapon
             {
                 timer = 0;
                 SpawnBullet();
+                AudioManager.InstanceAudio.PlaySound(ShootClip);
             }
         } 
         else
