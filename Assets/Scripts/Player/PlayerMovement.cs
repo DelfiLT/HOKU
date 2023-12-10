@@ -8,7 +8,6 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb2D;
-    private Vector2 movement;
     [SerializeField] private float speed;
     private PlayerInputs playerInput;
 
@@ -17,12 +16,16 @@ public class PlayerMovement : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         playerInput = new PlayerInputs();
         playerInput.Player.Enable();
-        playerInput.Player.Walk.performed += Walk;
     }
 
-    private void Walk(InputAction.CallbackContext context)
+    private void FixedUpdate()
     {
-        movement = context.ReadValue<Vector2>();
-        rb2D.velocity = movement * speed;
+        Movement();
+    }
+
+    private void Movement()
+    {
+        Vector2 movement = playerInput.Player.Walk.ReadValue<Vector2>();
+        rb2D.velocity = new Vector2(movement.x, movement.y) * speed;
     }
 }

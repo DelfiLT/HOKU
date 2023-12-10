@@ -14740,7 +14740,6 @@ GameObject:
   - component: {fileID: 7667000188693557196}
   - component: {fileID: 7667000188693557186}
   - component: {fileID: 7667000188693557185}
-  - component: {fileID: -8295828543020980357}
   - component: {fileID: 2178925143036292259}
   - component: {fileID: 7667000188693557184}
   - component: {fileID: 7667000188693557191}
@@ -14871,44 +14870,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &-8295828543020980357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7667000188693557197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 751e37f88522f4b4a9a5de88cfe81acf, type: 3}
-  m_NotificationBehavior: 3
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 074e4790-3f33-49a6-9a1d-0fee4de5e5d1
-    m_ActionName: Player/Walk
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ca834da1-d4ce-4b8e-8c94-67674fd8100d
-    m_ActionName: Player/Shoot[/Mouse/leftButton]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &2178925143036292259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14928,7 +14889,7 @@ MonoBehaviour:
   - {fileID: -1638782856, guid: d1d4f31f0e182464dbeac787ce07a9f4, type: 3}
   - {fileID: -1621788537, guid: 313f7dbcc240a29418569431954244c9, type: 3}
   - {fileID: -1156674052, guid: 3137052c838c5ad449e21d037a5241da, type: 3}
-  ShootClip: {fileID: 0}
+  ShootClip: {fileID: 8300000, guid: 02b0ee74389db2f45834fed2946eac85, type: 3}
   powerUpSprite: {fileID: 7737766166275173593}
 --- !u!114 &7667000188693557184
 MonoBehaviour:
@@ -14968,7 +14929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 100
-  explotionSound: {fileID: 6059437920950842123, guid: ae5ef5e01472fd643bb155a36469bc78, type: 3}
+  explotionSound: {fileID: 8300000, guid: 76d9ef8c3cf20ed4ca5dd8aea30f8409, type: 3}
   slider: {fileID: 0}
 --- !u!1 &7788969639253651445
 GameObject:

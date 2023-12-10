@@ -81,13 +81,25 @@ public class PlayerShooting : MonoBehaviour, Iweapon
         switch (weaponType)
         {
             case WeaponType.AutoCannon:
-                StartCoroutine(LoadWeapon(WeaponType.AutoCannon.ToString(), 0));
+                if(bulletName != WeaponType.AutoCannon.ToString())
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(LoadWeapon(WeaponType.AutoCannon.ToString(), 0));
+                }
                 break;
             case WeaponType.BigSpace:
-                StartCoroutine(LoadWeapon(WeaponType.BigSpace.ToString(), 1));
+                if (bulletName != WeaponType.BigSpace.ToString())
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(LoadWeapon(WeaponType.BigSpace.ToString(), 1));
+                }
                 break;
             case WeaponType.Rockets:
-                StartCoroutine(LoadWeapon(WeaponType.Rockets.ToString(), 2));
+                if (bulletName != WeaponType.Rockets.ToString())
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(LoadWeapon(WeaponType.Rockets.ToString(), 2));
+                }
                 break;
             default:
                 break;
