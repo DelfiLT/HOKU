@@ -11,6 +11,7 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
 
     [SerializeField] private AudioClip explotionSound;
     public Slider slider;
+    [SerializeField] private GameObject particlesDie;
 
     private bool shieldActivated;
 
@@ -57,6 +58,8 @@ public class PlayerHP : MonoBehaviour, IgetDamagedInterface
 
         PlayerShooting playerShooting = this.GetComponent<PlayerShooting>();
         playerShooting.enabled = false;
+
+        particlesDie.SetActive(false);
 
         this.GetComponent<SpriteRenderer>().enabled = false;
 

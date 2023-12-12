@@ -7,11 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public bool Level;
+    private bool Level;
     public int indexlevel;
-    [SerializeField] private AudioSource music;
-    [SerializeField] private AudioSource audioWhoosh;
-    [SerializeField] private AudioSource audiofire;
+    [SerializeField] private AudioClip audioFire;
     [SerializeField] private GameObject panelSettings;
     [SerializeField] private PlayableDirector timeline;
     [SerializeField] private ParticleSystem particles;
@@ -27,37 +25,38 @@ public class SceneController : MonoBehaviour
 
     public void ChangeLevel(int index)
     {
-       SceneManager.LoadScene(index);
+        AudioManager.InstanceAudio.PlaySound(audioFire);
+        SceneManager.LoadScene(index);
     }
 
     public void ChangePanel()
     {
         panelSettings.SetActive(true);
-        music.Play();
+        AudioManager.InstanceAudio.PlaySound(audioFire);
     }
 
     public void exitPanel()
     {
         panelSettings.SetActive(false);
-        music.Play();
+        AudioManager.InstanceAudio.PlaySound(audioFire);
     }
 
     public void Play()
     {
         timeline.Play();
+        AudioManager.InstanceAudio.PlaySound(audioFire);
         StartCoroutine(Loadingscreen());
     }
 
     public void Exit()
     {
+        AudioManager.InstanceAudio.PlaySound(audioFire);
         Application.Quit();
     }
 
    IEnumerator Loadingscreen()
     {
         yield return new WaitForSeconds(1f);
-        audioWhoosh.Play();
-        audiofire.Play();
 
         yield return new WaitForSeconds(12f);
         SceneManager.LoadScene(1);
